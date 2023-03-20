@@ -1,2 +1,2 @@
-# UI_VueNuxt
+# UIUX_VueNuxt
 UI_VueNuxt
