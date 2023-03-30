@@ -38,10 +38,10 @@ button {
   cursor: pointer;
 }
 
-/* remove blue outline */
 button:focus {
   outline: 0;
 }
+
 
 .burger-button {
   position: relative;

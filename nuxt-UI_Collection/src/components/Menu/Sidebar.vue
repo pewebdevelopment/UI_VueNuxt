@@ -9,6 +9,7 @@
         </transition>
     </div>
 </template>
+
 <script>
     import { store, mutations } from '@/store.js'
 
