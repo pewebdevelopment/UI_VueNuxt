@@ -6,362 +6,185 @@
             </template>
             <template v-slot:content>
                <div class="flex items-center justify-between px-2.5 h-[200px] overflow-auto">
-                  <ul class="section-bold-text">
-                      <li>align-content</li>
-                      <li>align-items</li>
-                      <li>align-self</li>
-                      <li>all</li>
-                      <li>animation</li>
-                      <li>animation-delay</li>
-                      <li>animation-direction</li>
-                      <li>animation-duration</li>
-                      <li>animation-fill-mode</li>
-                      <li>animation-iteration-count</li>
-                      <li>animation-name</li>
-                      <li>animation-play-state</li>
-                      <li>animation-timing-function</li>
-                      <li>backface-visibility</li>
-                      <li>background</li>
-                      <li>background-attachment</li>
-                      <li>background-blend-mode</li>
-                      <li>background-clip</li>
-                      <li>background-color</li>
-                      <li>background-image</li>
-                      <li>background-origin</li>
-                      <li>background-position</li>
-                      <li>background-repeat</li>
-                      <li>background-size</li>
-                      <li>border</li>
-                      <li>border-bottom</li>
-                      <li>border-bottom-color</li>
-                      <li>border-bottom-left-radius</li>
-                      <li>border-bottom-right-radius</li>
-                      <li>border-bottom-style</li>
-                      <li>border-bottom-width</li>
-                      <li>border-collapse</li>
-                      <li>border-color</li>
-                      <li>border-image</li>
-                      <li>border-image-outset</li>
-                      <li>border-image-repeat</li>
-                      <li>border-image-slice</li>
-                      <li>border-image-source</li>
-                      <li>border-image-width</li>
-                      <li>border-left</li>
-                      <li>border-left-color</li>
-                      <li>border-left-style</li>
-                      <li>border-left-color</li>
-                      <li>border-radius</li>
-                      <li>border-right</li>
-                      <li>border-right-color</li>
-                      <li>border-right-style</li>
-                      <li>border-right-width</li>
-                      <li>border-spacing</li>
-                      <li>border-style</li>
-                      <li>border-top</li>
-                      <li>border-top-color</li>
-                      <li>border-top-left-radius</li>
-                      <li>border-top-right-radius</li>
-                      <li>border-top-style</li>
-                      <li>border-top-width</li>
-                      <li>bottom</li>
-                      <li>box-shadow</li>
-                      <li>box-sizing</li>
-                      <li>caption-side</li>
-                      <li>clear</li>
-                      <li>clip</li>
-                      <li>Color</li>
-                      <li>column-count</li>
-                      <li>column-fill</li>
-                      <li>column-gap</li>
-                      <li>column-rule</li>
-                      <li>column-rule-color</li>
-                      <li>column-rule-style</li>
-                      <li>column-rule-style</li>
-                      <li>columns</li>
-                      <li>content</li>
-                      <li>counter-increment</li>
-                      <li>counter-reset</li>
-                      <li>cursor</li>
-                      <li>direction</li>
-                      <li>display</li>
-                      <li>empty-cells</li>
-                      <li>filter</li>
-                      <li>flex</li>
-                      <li>flex-basis</li>
-                      <li>flex-direction</li>
-                      <li>flex-flow</li>
-                      <li>flex-grow</li>
-                      <li>flex-shrink</li>
-                      <li>flex-wrap</li>
-                      <li>float</li>
-                      <li>font</li>
-                      <li>@font-face</li>
-                      <li>font-family</li>
-                      <li>font-size</li>
-                      <li>font-size-adjust</li>
-                      <li>font-strentch</li>
-                      <li>font-style</li>
-                      <li>font-variant</li>
-                      <li>font-weight</li>
-                      <li>hanging-punctuation</li>
-                      <li>height</li>
-                      <li>justify-content</li>
-                      <li>@keyframes</li>
-                      <li>left</li>
-                      <li>letter-spacing</li>
-                      <li>line-height</li>
-                      <li>list-style</li>
-                      <li>list-style-image</li>
-                      <li>list-style-position</li>
-                      <li>list-style-type</li>
-                      <li>margin</li>
-                      <li>margin-bottom</li>
-                      <li>margin-left</li>
-                      <li>margin-right</li>
-                      <li>margin-top</li>
-                      <li>max-height</li>
-                      <li>max-width</li>
-                      <li>@media</li>
-                      <li>min-height</li>
-                      <li>min-width</li>
-                      <li>nav-down</li>
-                      <li>nav-index</li>
-                      <li>nav-left</li>
-                      <li>nav-right</li>
-                      <li>nav-up</li>
-                      <li>opacity</li>
-                      <li>order</li>
-                      <li>outline</li>
-                      <li>outline-color</li>
-                      <li>outline-offset</li>
-                      <li>outline-style</li>
-                      <li>outline-width</li>
-                      <li>overflow</li>
-                      <li>overflow-x</li>
-                      <li>overflow-y</li>
-                      <li>padding</li>
-                      <li>padding-bottom</li>
-                      <li>padding-left</li>
-                      <li>padding-right</li>
-                      <li>padding-top</li>
-                      <li>page-break-after</li>
-                      <li>page-break-before</li>
-                      <li>page-break-inside</li>
-                      <li>perspective</li>
-                      <li>perspective-origin</li>
-                      <li>position</li>
-                      <li>quotes</li>
-                      <li>resize</li>
-                      <li>right</li>
-                      <li>tab-size</li>
-                      <li>table-layout</li>
-                      <li>text-align</li>
-                      <li>text-align-last</li>
-                      <li>text-decoration</li>
-                      <li>text-indent</li>
-                      <li>text-overflow</li>
-                      <li>text-shadow</li>
-                      <li>text-transform</li>
-                      <li>top</li>
-                      <li>transform</li>
-                      <li>transform-origin</li>
-                      <li>transform-style</li>
-                      <li>transition</li>
-                      <li>transition-delay</li>
-                      <li>transition-duration</li>
-                      <li>transition-property</li>
-                      <li>transition-timing-function</li>
-                      <li>unicode-bidi</li>
-                      <li>user-select</li>
-                      <li>vertical-align</li>
-                      <li>visibility</li>
-                      <li>white-space</li>
-                      <li>width</li>
-                      <li>word-break</li>
-                      <li>word-spacing</li>
-                      <li>word-wrap</li>
-                      <li>z-index</li>
-                  </ul>
-
-                  <ul class="section-italic-text">
-                      <li>behavior of the flex-wrap property</li>
-                      <li>alignment for items inside the container</li>
-                      <li>alignment for the selected item</li>
-                      <li>changes all properties</li>
-                      <li>binds an animation to an element</li>
-                      <li>delays animation start</li>
-                      <li>reverse animation or in alternate cycles</li>
-                      <li>animation duration in seconds or ms</li>
-                      <li>style when the animation is not playing</li>
-                      <li>number of an animation replays</li>
-                      <li>name for the @keyframes animation</li>
-                      <li>the animation is running or paused</li>
-                      <li>speed curve of an animation</li>
-                      <li>is element visible when not facing the screen</li>
-                      <li>all background properties in one declaration</li>
-                      <li>is the background image fixed or scrolls</li>
-                      <li>blending mode of each background layer</li>
-                      <li>painting area of the background</li>
-                      <li>background color</li>
-                      <li>background image</li>
-                      <li>where the background image is positioned</li>
-                      <li>starting position of the background image</li>
-                      <li>the way the background image is repeated</li>
-                      <li>background image size</li>
-                      <li>sets all border properties in one line</li>
-                      <li>bottom border properties in one line</li>
-                      <li>color of the bottom border</li>
-                      <li>border bottom left radius</li>
-                      <li>border bottom right radius</li>
-                      <li>border bottom style</li>
-                      <li>border bottom style</li>
-                      <li>border collapse</li>
-                      <li>border color</li>
-                      <li>sets an image as border</li>
-                      <li>border image area extends beyond the border box</li>
-                      <li>border image repeated, rounded or stretched</li>
-                      <li>how to slice the border image</li>
-                      <li>path to the border image</li>
-                      <li>border image width</li>
-                      <li>left border properties in one line</li>
-                      <li>border left color</li>
-                      <li>border left style</li>
-                      <li>border left width</li>
-                      <li>border radius of the four rounded corners</li>
-                      <li>right border properties in one line</li>
-                      <li>border right color</li>
-                      <li>border right style</li>
-                      <li>border right width</li>
-                      <li>border spacing</li>
-                      <li>border style</li>
-                      <li>top border properties in one line</li>
-                      <li>border top color</li>
-                      <li>border top left radius</li>
-                      <li>border top right radius</li>
-                      <li>border top style</li>
-                      <li>border top width</li>
-                      <li>border width</li>
-                      <li>bottom offset for relative and absolute elements</li>
-                      <li>shadow to element</li>
-                      <li>box sizing properties</li>
-                      <li>placement of a table caption</li>
-                      <li>deny floating of an element</li>
-                      <li>clip an absolutely positioned element</li>
-                      <li>text color</li>
-                      <li>divide the content in columns</li>
-                      <li>balanced fill or not</li>
-                      <li>gap between the columns</li>
-                      <li>separator between columns, like border</li>
-                      <li>column rule color</li>
-                      <li>column rule style</li>
-                      <li>column rule width</li>
-                      <li>column span</li>
-                      <li>column width</li>
-                      <li>set column-width and column-count</li>
-                      <li>insert content :before and :after elements</li>
-                      <li>count sections</li>
-                      <li>reset counter</li>
-                      <li>cursor type when element is hovered</li>
-                      <li>writing direction, Arabic is using rtl</li>
-                      <li>box display type</li>
-                      <li>hide borders and background on empty table cells</li>
-                      <li>image effects: grayscale, blur, invert etc.</li>
-                      <li>item length, relative to others inside the container</li>
-                      <li>initial length of a flexible item</li>
-                      <li>direction of the flexible items</li>
-                      <li>shorthand for flex-direction and flex-wrap</li>
-                      <li>how much the item will grow relative other items</li>
-                      <li>how to shrink the item relative to other items</li>
-                      <li>wrap flexible items</li>
-                      <li>float elements left or right</li>
-                      <li>all font properties in one line</li>
-                      <li>declare non-web-safe fonts</li>
-                      <li>font of the element</li>
-                      <li>font size</li>
-                      <li>control font size if the first declared option is not available</li>
-                      <li>widen or narrow text</li>
-                      <li>font style: normal, italic, oblique</li>
-                      <li>set small-caps</li>
-                      <li>use bold or thin characters</li>
-                      <li>can a punctuation mark be placed outside the line box?</li>
-                      <li>height of the element</li>
-                      <li>justifies flexible container's items horizontally if necessary</li>
-                      <li>specifies the animation code</li>
-                      <li>left offset for relative and absolute elements</li>
-                      <li>space between characters</li>
-                      <li>line height of text or inline-block elements</li>
-                      <li>all list properties in one line</li>
-                      <li>replace the list item marker with an image</li>
-                      <li>list item markers inside or outside the content flow</li>
-                      <li>set the type of the list item marker</li>
-                      <li>set the top, right, bottom and left margins in one line</li>
-                      <li>bottom margin</li>
-                      <li>left margin</li>
-                      <li>right margin</li>
-                      <li>margin top</li>
-                      <li>maximum height of element</li>
-                      <li>maximum width of element</li>
-                      <li>see media queries</li>
-                      <li>minimum height</li>
-                      <li>minimum width</li>
-                      <li>where to navigate when the the arrow-down button is pressed</li>
-                      <li>sets sequential navigation order</li>
-                      <li>where to navigate when the the arrow-left button is pressed</li>
-                      <li>where to navigate when the the arrow-right button is pressed</li>
-                      <li>where to navigate when the the arrow-up button is pressed</li>
-                      <li>transparency level of an element</li>
-                      <li>reorder elements in a container</li>
-                      <li>drow an outer border around elements</li>
-                      <li>outline color</li>
-                      <li>gap between the element and the outline</li>
-                      <li>outline style</li>
-                      <li>outline width</li>
-                      <li>hide, display or scroll if the content overflows its container</li>
-                      <li>horizontal overflow</li>
-                      <li>vertical overflow</li>
-                      <li>padding between the element border and content</li>
-                      <li>padding bottom</li>
-                      <li>padding left</li>
-                      <li>padding right</li>
-                      <li>padding top</li>
-                      <li>adds page break after an element</li>
-                      <li>adds page break before an element</li>
-                      <li>allow page break inside an element</li>
-                      <li>how many pixels the 3D element is placed from the view</li>
-                      <li>where is the 3D element based in the x- and y-axis</li>
-                      <li>positioning type: absolute, fixed, relative, static</li>
-                      <li>set quotation marks to wrap an element</li>
-                      <li>declare resizable elements</li>
-                      <li>right offset for relative and absolute elements</li>
-                      <li>tab character space length</li>
-                      <li>table layout algorithm</li>
-                      <li>horizontal alignment of text</li>
-                      <li>horizontal alignment of last line of text</li>
-                      <li>overline, underline or line-through the text</li>
-                      <li>indentation of the first line of the text</li>
-                      <li>the way how overflowed content is marked (ellipsis)</li>
-                      <li>text shadow</li>
-                      <li>capitalization of text</li>
-                      <li>top offset for relative and absolute elements</li>
-                      <li>2D 3D transformation. See widget.</li>
-                      <li>changes the position of transformed elements</li>
-                      <li>render nested elements in 3D</li>
-                      <li>transition properties in one line</li>
-                      <li>delay before transition effect start</li>
-                      <li>transition effect duration</li>
-                      <li>which CSS property is the transition affecting</li>
-                      <li>speed curve of the transition</li>
-                      <li>should the text be overridden to support more languages</li>
-                      <li>disable user content selection</li>
-                      <li>vertical alignment</li>
-                      <li>visibility:hidden elements leave a gap</li>
-                      <li>how are white-spaces handled</li>
-                      <li>width of an element</li>
-                      <li>text breaking rules when text reaches the end of the container</li>
-                      <li>size of white space between words</li>
-                      <li>break long words and wrap onto the next line</li>
-                      <li>stack order of the element</li>
-                  </ul>
+<div class="descriptionListing">
+								<div class="text-grid"><span class="section-bold-text">align-content</span><em class="section-italic-text">behavior of the flex-wrap property </em></div>
+								<div class="text-grid"><span class="section-bold-text">align-items</span><em class="section-italic-text">alignment for items inside the container </em></div>
+								<div class="text-grid"><span class="section-bold-text">align-self</span><em class="section-italic-text">alignment for the selected item </em></div>
+								<div class="text-grid"><span class="section-bold-text">all</span><em class="section-italic-text">changes all properties </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation</span><em class="section-italic-text">binds an animation to an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-delay</span><em class="section-italic-text">delays animation start </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-direction</span><em class="section-italic-text">reverse animation or in alternate cycles </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-duration</span><em class="section-italic-text">animation duration in seconds or ms </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-fill-mode</span><em class="section-italic-text">style when the animation is not playing  </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-iteration-count</span><em class="section-italic-text">number of an animation replays </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-name</span><em class="section-italic-text">name for the @keyframes animation </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-play-state</span><em class="section-italic-text">the animation is running or paused </em></div>
+								<div class="text-grid"><span class="section-bold-text">animation-timing-function</span><em class="section-italic-text">speed curve of an animation </em></div>
+								<div class="text-grid"><span class="section-bold-text">backface-visibility</span><em class="section-italic-text">is element visible when not facing the screen </em></div>
+								<div class="text-grid"><span class="section-bold-text">background</span><em class="section-italic-text">all background properties in one declaration </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-attachment</span><em class="section-italic-text">is the background image fixed or scrolls</em></div>
+								<div class="text-grid"><span class="section-bold-text">background-blend-mode</span><em class="section-italic-text">blending mode of each background layer </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-clip</span><em class="section-italic-text">painting area of the background </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-color</span><em class="section-italic-text">background color </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-image</span><em class="section-italic-text">background image </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-origin</span><em class="section-italic-text">where the background image is positioned </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-position</span><em class="section-italic-text">starting position of the background image </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-repeat</span><em class="section-italic-text">the way the background image is repeated </em></div>
+								<div class="text-grid"><span class="section-bold-text">background-size</span><em class="section-italic-text">background image size </em></div>
+								<div class="text-grid"><span class="section-bold-text">border</span><em class="section-italic-text">sets all border properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom</span><em class="section-italic-text">bottom border properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom-color</span><em class="section-italic-text">color of the bottom border</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom-left-radius</span><em class="section-italic-text">border bottom left radius </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom-right-radius</span><em class="section-italic-text">border bottom right radius </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom-style</span><em class="section-italic-text">border bottom style </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-bottom-width</span><em class="section-italic-text">border bottom width</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-collapse</span><em class="section-italic-text">border collapse</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-color</span><em class="section-italic-text">border color </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image</span><em class="section-italic-text">sets an image as border</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image-outset</span><em class="section-italic-text">border image area extends beyond the border box </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image-repeat</span><em class="section-italic-text">border image repeated, rounded or stretched</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image-slice</span><em class="section-italic-text">how to slice the border image </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image-source</span><em class="section-italic-text">path to the border image </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-image-width</span><em class="section-italic-text">border image width </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-left</span><em class="section-italic-text">left border properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-left-color</span><em class="section-italic-text">border left color </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-left-style</span><em class="section-italic-text">border left style </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-left-width</span><em class="section-italic-text">border left width </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-radius</span><em class="section-italic-text">border radius of the four rounded corners</em></div>
+								<div class="text-grid"><span class="section-bold-text">border-right</span><em class="section-italic-text">right border properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-right-color</span><em class="section-italic-text">border right color </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-right-style</span><em class="section-italic-text">border right style </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-right-width</span><em class="section-italic-text">border right width </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-spacing</span><em class="section-italic-text">border spacing </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-style</span><em class="section-italic-text">border style </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top</span><em class="section-italic-text">top border properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top-color</span><em class="section-italic-text">border top color </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top-left-radius</span><em class="section-italic-text">border top left radius </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top-right-radius</span><em class="section-italic-text">border top right radius </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top-style</span><em class="section-italic-text">border top style </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-top-width</span><em class="section-italic-text">border top width </em></div>
+								<div class="text-grid"><span class="section-bold-text">border-width</span><em class="section-italic-text">border width </em></div>
+								<div class="text-grid"><span class="section-bold-text">bottom</span><em class="section-italic-text">bottom offset for relative and absolute elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">box-shadow</span><em class="section-italic-text">shadow to element </em></div>
+								<div class="text-grid"><span class="section-bold-text">box-sizing</span><em class="section-italic-text">box sizing properties</em></div>
+								<div class="text-grid"><span class="section-bold-text">caption-side</span><em class="section-italic-text">placement of a table caption </em></div>
+								<div class="text-grid"><span class="section-bold-text">clear</span><em class="section-italic-text">deny floating of an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">clip</span><em class="section-italic-text">clip an absolutely positioned element </em></div>
+								<div class="text-grid"><span class="section-bold-text">color</span><em class="section-italic-text">text color</em></div>
+								<div class="text-grid"><span class="section-bold-text">column-count</span><em class="section-italic-text">divide the content in columns</em></div>
+								<div class="text-grid"><span class="section-bold-text">column-fill</span><em class="section-italic-text">balanced fill or not </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-gap</span><em class="section-italic-text">gap between the columns </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-rule</span><em class="section-italic-text">separator between columns, like border </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-rule-color</span><em class="section-italic-text">column rule color </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-rule-style</span><em class="section-italic-text">column rule style </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-rule-width</span><em class="section-italic-text">column rule width </em></div>
+								<div class="text-grid"><span class="section-bold-text">column-span</span><em class="section-italic-text"> column span</em></div>
+								<div class="text-grid"><span class="section-bold-text">column-width</span><em class="section-italic-text">column width </em></div>
+								<div class="text-grid"><span class="section-bold-text">columns</span><em class="section-italic-text">set column-width and column-count </em></div>
+								<div class="text-grid"><span class="section-bold-text">content</span><em class="section-italic-text">insert content :before and :after elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">counter-increment</span><em class="section-italic-text">count sections </em></div>
+								<div class="text-grid"><span class="section-bold-text">counter-reset</span><em class="section-italic-text">reset counter </em></div>
+								<div class="text-grid"><span class="section-bold-text">cursor</span><em class="section-italic-text">cursor type when element is hovered </em></div>
+								<div class="text-grid"><span class="section-bold-text">direction</span><em class="section-italic-text">writing direction, Arabic is using rtl </em></div>
+								<div class="text-grid"><span class="section-bold-text">display</span><em class="section-italic-text">box display type </em></div>
+								<div class="text-grid"><span class="section-bold-text">empty-cells</span><em class="section-italic-text">hide borders and background on empty table cells </em></div>
+								<div class="text-grid"><span class="section-bold-text">filter</span><em class="section-italic-text">image effects: grayscale, blur, invert etc. </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex</span><em class="section-italic-text">item length, relative to others inside the container </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-basis</span><em class="section-italic-text">initial length of a flexible item </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-direction</span><em class="section-italic-text">direction of the flexible items </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-flow</span><em class="section-italic-text">shorthand for flex-direction and flex-wrap  </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-grow</span><em class="section-italic-text">how much the item will grow relative other items </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-shrink</span><em class="section-italic-text">how to shrink the item relative to other items </em></div>
+								<div class="text-grid"><span class="section-bold-text">flex-wrap</span><em class="section-italic-text">wrap flexible items </em></div>
+								<div class="text-grid"><span class="section-bold-text">float</span><em class="section-italic-text">float elements left or right </em></div>
+								<div class="text-grid"><span class="section-bold-text">font</span><em class="section-italic-text">all font properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">@font-face</span><em class="section-italic-text">declare non-web-safe fonts</em></div>
+								<div class="text-grid"><span class="section-bold-text">font-family</span><em class="section-italic-text">font of the element </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-size</span><em class="section-italic-text">font size </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-size-adjust</span><em class="section-italic-text">control font size if the first declared option is not available </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-stretch</span><em class="section-italic-text">widen or narrow text </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-style</span><em class="section-italic-text">font style: normal, italic, oblique </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-variant</span><em class="section-italic-text">set small-caps </em></div>
+								<div class="text-grid"><span class="section-bold-text">font-weight</span><em class="section-italic-text">use bold or thin characters </em></div>
+								<div class="text-grid"><span class="section-bold-text">hanging-punctuation</span><em class="section-italic-text">can a punctuation mark be placed outside the line box?  </em></div>
+								<div class="text-grid"><span class="section-bold-text">height</span><em class="section-italic-text">height of the element </em></div>
+								<div class="text-grid"><span class="section-bold-text">justify-content</span><em class="section-italic-text">justifies flexible container's items horizontally if necessary  </em></div>
+								<div class="text-grid"><span class="section-bold-text">@keyframes</span><em class="section-italic-text">specifies the animation code </em></div>
+								<div class="text-grid"><span class="section-bold-text">left</span><em class="section-italic-text">left offset for relative and absolute elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">letter-spacing</span><em class="section-italic-text">space between characters  </em></div>
+								<div class="text-grid"><span class="section-bold-text">line-height</span><em class="section-italic-text">line height of text or inline-block elements</em></div>
+								<div class="text-grid"><span class="section-bold-text">list-style</span><em class="section-italic-text">all list properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">list-style-image</span><em class="section-italic-text">replace the list item marker with an image </em></div>
+								<div class="text-grid"><span class="section-bold-text">list-style-position</span><em class="section-italic-text">list item markers inside or outside the content flow </em></div>
+								<div class="text-grid"><span class="section-bold-text">list-style-type</span><em class="section-italic-text">set the type of the list item marker </em></div>
+								<div class="text-grid"><span class="section-bold-text">margin</span><em class="section-italic-text">set the top, right, bottom and left margins in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">margin-bottom</span><em class="section-italic-text">bottom margin </em></div>
+								<div class="text-grid"><span class="section-bold-text">margin-left</span><em class="section-italic-text">left margin </em></div>
+								<div class="text-grid"><span class="section-bold-text">margin-right</span><em class="section-italic-text">right margin </em></div>
+								<div class="text-grid"><span class="section-bold-text">margin-top</span><em class="section-italic-text">margin top </em></div>
+								<div class="text-grid"><span class="section-bold-text">max-height</span><em class="section-italic-text">maximum height of element </em></div>
+								<div class="text-grid"><span class="section-bold-text">max-width</span><em class="section-italic-text">maximum width of element </em></div>
+								<div class="text-grid"><span class="section-bold-text">@media</span><em class="section-italic-text">see media queries </em></div>
+								<div class="text-grid"><span class="section-bold-text">min-height</span><em class="section-italic-text">minimum height </em></div>
+								<div class="text-grid"><span class="section-bold-text">min-width</span><em class="section-italic-text">minimum width </em></div>
+								<div class="text-grid"><span class="section-bold-text">nav-down</span><em class="section-italic-text">where to navigate when the the arrow-down button is pressed </em></div>
+								<div class="text-grid"><span class="section-bold-text">nav-index</span><em class="section-italic-text">sets sequential navigation order  </em></div>
+								<div class="text-grid"><span class="section-bold-text">nav-left</span><em class="section-italic-text">where to navigate when the the arrow-left button is pressed </em></div>
+								<div class="text-grid"><span class="section-bold-text">nav-right</span><em class="section-italic-text">where to navigate when the the arrow-right button is pressed </em></div>
+								<div class="text-grid"><span class="section-bold-text">nav-up</span><em class="section-italic-text">where to navigate when the the arrow-up button is pressed </em></div>
+								<div class="text-grid"><span class="section-bold-text">opacity</span><em class="section-italic-text">transparency level of an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">order</span><em class="section-italic-text">reorder elements in a container </em></div>
+								<div class="text-grid"><span class="section-bold-text">outline</span><em class="section-italic-text">drow an outer border around elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">outline-color</span><em class="section-italic-text">outline color </em></div>
+								<div class="text-grid"><span class="section-bold-text">outline-offset</span><em class="section-italic-text">gap between the element and the outline </em></div>
+								<div class="text-grid"><span class="section-bold-text">outline-style</span><em class="section-italic-text">outline style </em></div>
+								<div class="text-grid"><span class="section-bold-text">outline-width</span><em class="section-italic-text">outline width </em></div>
+								<div class="text-grid"><span class="section-bold-text">overflow</span><em class="section-italic-text">hide, display or scroll if the content overflows its container  </em></div>
+								<div class="text-grid"><span class="section-bold-text">overflow-x</span><em class="section-italic-text">horizontal overflow </em></div>
+								<div class="text-grid"><span class="section-bold-text">overflow-y</span><em class="section-italic-text">vertical overflow </em></div>
+								<div class="text-grid"><span class="section-bold-text">padding</span><em class="section-italic-text">padding between the element border and content</em></div>
+								<div class="text-grid"><span class="section-bold-text">padding-bottom</span><em class="section-italic-text">padding bottom </em></div>
+								<div class="text-grid"><span class="section-bold-text">padding-left</span><em class="section-italic-text">padding left </em></div>
+								<div class="text-grid"><span class="section-bold-text">padding-right</span><em class="section-italic-text">padding right </em></div>
+								<div class="text-grid"><span class="section-bold-text">padding-top</span><em class="section-italic-text">padding top </em></div>
+								<div class="text-grid"><span class="section-bold-text">page-break-after</span><em class="section-italic-text">adds page break after an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">page-break-before</span><em class="section-italic-text">adds page break before an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">page-break-inside</span><em class="section-italic-text">allow page break inside an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">perspective</span><em class="section-italic-text">how many pixels the 3D element is placed from the view </em></div>
+								<div class="text-grid"><span class="section-bold-text">perspective-origin</span><em class="section-italic-text">where is the 3D element based in the x- and y-axis </em></div>
+								<div class="text-grid"><span class="section-bold-text">position</span><em class="section-italic-text">positioning type: absolute, fixed, relative, static</em></div>
+								<div class="text-grid"><span class="section-bold-text">quotes</span><em class="section-italic-text">set quotation marks to wrap an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">resize</span><em class="section-italic-text">declare resizable elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">right</span><em class="section-italic-text">right offset for relative and absolute elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">tab-size</span><em class="section-italic-text">tab character space length </em></div>
+								<div class="text-grid"><span class="section-bold-text">table-layout</span><em class="section-italic-text">table layout algorithm </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-align</span><em class="section-italic-text">horizontal alignment of text </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-align-last</span><em class="section-italic-text">horizontal alignment of last line of text </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-decoration</span><em class="section-italic-text">overline, underline or line-through the text </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-indent</span><em class="section-italic-text">indentation of the first line of the text </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-overflow</span><em class="section-italic-text">the way how overflowed content is marked (ellipsis) </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-shadow</span><em class="section-italic-text">text shadow </em></div>
+								<div class="text-grid"><span class="section-bold-text">text-transform</span><em class="section-italic-text">capitalization of text </em></div>
+								<div class="text-grid"><span class="section-bold-text">top</span><em class="section-italic-text">top offset for relative and absolute elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">transform</span><em class="section-italic-text">2D 3D transformation. See widget. </em></div>
+								<div class="text-grid"><span class="section-bold-text">transform-origin</span><em class="section-italic-text">changes the position of transformed elements </em></div>
+								<div class="text-grid"><span class="section-bold-text">transform-style</span><em class="section-italic-text">render nested elements in 3D </em></div>
+								<div class="text-grid"><span class="section-bold-text">transition</span><em class="section-italic-text">transition properties in one line </em></div>
+								<div class="text-grid"><span class="section-bold-text">transition-delay</span><em class="section-italic-text">delay before transition effect start </em></div>
+								<div class="text-grid"><span class="section-bold-text">transition-duration</span><em class="section-italic-text">transition effect duration </em></div>
+								<div class="text-grid"><span class="section-bold-text">transition-property</span><em class="section-italic-text">which CSS property is the transition affecting </em></div>
+								<div class="text-grid"><span class="section-bold-text">transition-timing-function</span><em class="section-italic-text">speed curve of the transition </em></div>
+								<div class="text-grid"><span class="section-bold-text">unicode-bidi</span><em class="section-italic-text">should the text be overridden to support more languages </em></div>
+								<div class="text-grid"><span class="section-bold-text">user-select</span><em class="section-italic-text">disable user content selection </em></div>
+								<div class="text-grid"><span class="section-bold-text">vertical-align</span><em class="section-italic-text">vertical alignment </em></div>
+								<div class="text-grid"><span class="section-bold-text">visibility</span><em class="section-italic-text">visibility:hidden elements leave a gap  </em></div>
+								<div class="text-grid"><span class="section-bold-text">white-space</span><em class="section-italic-text">how are white-spaces handled </em></div>
+								<div class="text-grid"><span class="section-bold-text">width</span><em class="section-italic-text">width of an element </em></div>
+								<div class="text-grid"><span class="section-bold-text">word-break</span><em class="section-italic-text">text breaking rules when text reaches the end of the container </em></div>
+								<div class="text-grid"><span class="section-bold-text">word-spacing</span><em class="section-italic-text">size of white space between words </em></div>
+								<div class="text-grid"><span class="section-bold-text">word-wrap</span><em class="section-italic-text">break long words and wrap onto the next line </em></div>
+								<div class="text-grid"><span class="section-bold-text">z-index</span><em class="section-italic-text">stack order of the element </em></div>
+							</div>
                </div>
             </template>
         </Section>

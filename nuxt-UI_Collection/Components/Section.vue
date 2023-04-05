@@ -1,5 +1,5 @@
 <template>
-    <div class="section relative shadow-md">
+    <div class="section relative shadow-xl">
         <div class="flex justify-between items-end absolute top-[-30px] left-[15px] right-[-15px]">
             <h2 class="section-header">
                 <slot name="header" />

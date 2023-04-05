@@ -24,7 +24,7 @@
 											Position:
 										</div>
 										<div class="settingRowInput flex items-end">
-											<div id="backgroundPositionSelect">
+											<div id="backgroundPositionSelect" class="">
 												<div>
 													<a style="background-position: left top;" title="left top">
 													</a>
@@ -49,9 +49,6 @@
 													<a style="background-position: right bottom;" title="right bottom">
 													</a>
 												</div>
-												<!-- <div>
-                                                    ???
-												</div> -->
 											</div>
 											<div class="ml-3">
 												<table>
@@ -154,8 +151,6 @@ export default ({
 
 
 <style scoped>
-
-
 #backgroundPositionSelect > div > a {
     display: block;
     float: left;
@@ -167,6 +162,8 @@ export default ({
 }
 
 #backgroundPositionSelect {
+	max-width: 80px;
+	/* height: 80px; */
     display: inline-flex;
     flex-direction: column;
     border: 1px solid #999;

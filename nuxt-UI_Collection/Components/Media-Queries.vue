@@ -2,7 +2,7 @@
     <div>
         <Section>
             <template v-slot:header>
-                Basics
+                Media Queries
             </template>
 
             <template v-slot:content>
@@ -10,7 +10,7 @@
                    <h4>Syntax</h4>
                </div>
 
-<div>
+<div class="overflow-auto">
 <pre style="color:#000" id="selectable6" onclick="selectText(&quot;selectable6&quot;)"><span style="color:#0100b6;font-weight:700">@media</span> not|only <span style="color:#06960e;font-weight:700">mediatype</span> <span style="color:#0100b6;font-weight:700">and</span> (<span style="color:#6d79de;font-weight:700">media feature</span>) {
 CSS Code }
 </pre>
@@ -23,7 +23,7 @@ CSS Code }
                    <h4>Viewport is 480 pixels or smaller</h4>
                </div>
 
-<div>
+<div class="overflow-auto">
 <pre style="color:#000" id="selectable8" onclick="selectText(&quot;selectable8&quot;)"><span style="color:#0100b6;font-weight:700">@media</span> <span style="color:#06960e;font-weight:700">screen</span> <span style="color:#0100b6;font-weight:700">and</span> (<span style="color:#6d79de;font-weight:700">max-width</span>: <span style="color:#cd0000;font-style:italic">480<span style="color:#0100b6;font-weight:700">px</span></span>) { }
 </pre>
 </div>
@@ -32,7 +32,7 @@ CSS Code }
                    <h4>Viewport width smaller or height smaller</h4>
                </div>
 
-<div>
+<div class="overflow-auto">
 <pre id="selectable9" onclick="selectText(&quot;selectable9&quot;)"><span style="color:#800080; ">@</span><span style="color:#004a43; ">media</span> <span style="color:#004a43; ">screen and (max-width: 600px), (max-height: 500px) </span><span style="color:#800080; ">{</span>
 </pre>
 </div>
@@ -49,7 +49,7 @@ CSS Code }
                    <h4>Night/dark mode</h4>
                </div>
 
-<div>
+<div class="overflow-auto">
     <pre id="selectable11" onclick="selectText(&quot;selectable11&quot;)">@media (prefers-color-scheme: dark) { ... }</pre>
 </div>
 

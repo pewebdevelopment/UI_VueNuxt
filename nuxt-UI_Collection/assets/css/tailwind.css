@@ -23,14 +23,17 @@ body {
     .nav-links {@apply w-full py-[5px] text-[#eee] font-bold text-center cursor-pointer tracking-[5px] uppercase}
 
     /* cheat sheet */
-    .cheatsheet-header {@apply flex items-center text-[32px] text-[#1C6EA4] font-bold pl-[20px]}
+    .cheatsheet-header {@apply flex items-center text-[24px] md:text-[32px] text-[#1C6EA4] font-bold pl-[20px]}
     
     /* section header */
     .section {@apply text-[#444] bg-white w-full md:max-w-[429px] rounded-lg relative py-2 md:mr-5 mb-[30px]}
     .section-header {@apply inline-block text-[20px] text-[#555] capitalize bg-[#fff] pt-[5px] px-[15px] rounded-t-lg}
     .section-subheader {@apply w-full bg-[#1c6ea41a] text-[12px] text-[#555] font-bold px-[5px] mt-3 mb-1}
-    .section-bold-text {@apply text-[13px] font-bold}
-    .section-italic-text {@apply text-[13px] italic}
+    .section-bold-text {@apply text-[13px] font-bold col-span-1}
+    .section-italic-text {@apply text-[13px] italic col-span-2}
+    .text-grid {
+        @apply grid grid-cols-3 gap-2
+    }
 
     /* basics */
     .margin {@apply w-full bg-[#B4CFE1] text-white text-[13px] text-center pt-[1px] px-[10px] pb-[9px]}
@@ -55,7 +58,7 @@ body {
     #backgroundResult {@apply p-1 text-left}
 
     /* gradient */
-    .gradient-input {@apply border border-[#ccc] w-[83px] h-[21px] py-[2px] px-[5px] body-text text-white}
+    .gradient-input {@apply border border-[#ccc] w-full md:w-[83px] h-[21px] py-[2px] px-[5px] body-text text-white}
 
 
     /* slider */
@@ -66,18 +69,18 @@ body {
 
     /* code editor */
     .editor-container {@apply md:max-w-[477.8px] md:mr-3.5 mb-2.5 h-[240px]}
-    .editor-wrapper {@apply flex items-start w-full h-full border-[1px] border-[#999] overflow-hidden}
-    .preview-wrapper {@apply flex flex-col w-full h-full border-[1px] border-[#999] overflow-hidden}
+    .editor-wrapper {@apply flex items-start w-full h-full border-[1px] border-[#999] overflow-auto}
+    .preview-wrapper {@apply flex flex-col w-full h-full border-[1px] border-[#999] overflow-auto}
     .editor-title {@apply blue-text text-[13px] font-bold uppercase}
     .preview-title {@apply text-[#444] text-[13px] font-bold uppercase}
     .side-plate {@apply w-[28px] h-full border-r border-r-[#ddd] bg-[#f7f7f7] text-[#999] text-right}
     .preview-plate {@apply h-[28px] w-full border-t border-t-[#ddd] bg-[#f7f7f7] text-[#999] text-left}
     .plate-number {@apply text-[13px] pr-[3px] pl-[5px]}
-    .textarea {@apply outline-none w-full h-full text-[12px] p-2}
+    .textarea {@apply outline-none w-full min-w-[250px] h-full text-[12px] p-2}
 
     /* article */
     .article-wrapper {@apply w-full text-[16px] flex justify-center }
-    .article {@apply px-[25px] pt-[15px] pb-[10px] my-5 bg-white max-w-[900px]}
+    .article {@apply p-1 md:px-[25px] md:pt-[15px] md:pb-[10px] my-5 bg-white max-w-[900px]}
     .article article {@apply px-[25px] pt-[15px] pb-[10px] my-5}
     .article-header {@apply text-[18px] blue-text font-bold leading-[1.5]}
     .article-subheader {@apply font-bold}

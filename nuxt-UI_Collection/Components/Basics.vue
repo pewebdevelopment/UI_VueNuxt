@@ -20,8 +20,9 @@
                <div class="section-subheader">
                    <h4>Include external css file</h4>
                </div>
-
+<div class="overflow-auto">
 <pre style="color:#000" id="selectable2" onclick="selectText(&quot;selectable2&quot;)"><span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span><span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span><span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span><span style="font-style:italic">href</span>=<span style="color:#d80800">"/style.css"</span> /&gt;</span></pre>
+</div>
 
                <div class="section-subheader">
                    <h4>Internal styles</h4>

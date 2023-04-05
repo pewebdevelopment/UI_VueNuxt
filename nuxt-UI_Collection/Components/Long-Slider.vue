@@ -1,13 +1,12 @@
 <template>
         <div class="ml-2">
-        <input type="range" placeholder="0" class="slider" />
+        <input type="range" placeholder="0" class="slider w-11/12" />
 		</div>
 </template>
 
 <style scoped>
 .slider {
     appearance: none;
-    width: 280px;
     height: 14px;
     border-radius: 4px;
     background: #eee;

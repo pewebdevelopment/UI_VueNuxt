@@ -6,35 +6,20 @@
             </template>
             <template v-slot:content>
                <div class="flex items-center justify-between px-2.5">
-                  <ul class="section-bold-text">
-                      <li><sup>*</sup></li>
-                      <li>div</li>
-                      <li>div,p</li>
-                      <li>div p</li>
-                      <li>div > p</li>
-                      <li>div + p</li>
-                      <li>div ~ p</li>
-                      <li>.classname</li>
-                      <li>#idname</li>
-                      <li>div.classname</li>
-                      <li>div#idname</li>
-                      <li>#idname<sup>*</sup></li>
-                  </ul>
-
-                  <ul class="section-italic-text">
-                      <li>all elements</li>
-                      <li>all div tags</li>
-                      <li>all divs and paragraphs</li>
-                      <li>paragraphs inside divs</li>
-                      <li>all p tags, one level deep in div</li>
-                      <li>p tags immediately after div</li>
-                      <li>p tags preceded by div</li>
-                      <li>all elements with class</li>
-                      <li>element with ID</li>
-                      <li>divs with certain classname</li>
-                      <li>div with certain ID</li>
-                      <li>all elements inside #idname</li>
-                  </ul>
+                   <div class="">
+						<div class="text-grid"><span class="section-bold-text">* </span><em class="section-italic-text">all elements</em></div>
+						<div class="text-grid"><span class="section-bold-text">div </span><em class="section-italic-text">all div tags </em></div>
+						<div class="text-grid"><span class="section-bold-text">div,p </span><em class="section-italic-text">all divs and paragraphs </em></div>
+						<div class="text-grid"><span class="section-bold-text">div p </span><em class="section-italic-text">paragraphs inside divs </em></div>
+						<div class="text-grid"><span class="section-bold-text">div &gt; p </span><em class="section-italic-text">all p tags, one level deep in div</em></div>
+						<div class="text-grid"><span class="section-bold-text">div + p </span><em class="section-italic-text">p tags immediately after div</em></div>
+						<div class="text-grid"><span class="section-bold-text">div ~ p </span><em class="section-italic-text">p tags preceded by div</em></div>
+						<div class="text-grid"><span class="section-bold-text">.classname </span><em class="section-italic-text">all elements with class </em></div>
+						<div class="text-grid"><span class="section-bold-text">#idname </span><em class="section-italic-text">element with ID </em></div>
+						<div class="text-grid"><span class="section-bold-text">div.classname </span><em class="section-italic-text">divs with certain classname</em></div>
+						<div class="text-grid"><span class="section-bold-text">div#idname </span><em class="section-italic-text">div with certain ID </em></div>
+						<div class="text-grid"><span class="section-bold-text">#idname * </span><em class="section-italic-text">all elements inside #idname</em></div>
+					</div>
                </div>
 
                <div class="section-subheader">
@@ -42,85 +27,45 @@
                </div>
 
                <div class="flex items-center justify-between px-2.5 h-[200px] overflow-auto">
-                  <ul class="section-bold-text">
-                      <li>a:link</li>
-                      <li>a:active</li>
-                      <li>a:hover</li>
-                      <li>a:visited</li>
-                      <li>p::after{content:"yo";}</li>
-                      <li>p::before</li>
-                      <li>input:checked</li>
-                      <li>input:disabled</li>
-                      <li>input:enabled</li>
-                      <li>input:focus</li>
-                      <li>input:in-range</li>
-                      <li>input:out-of-range</li>
-                      <li>input:valid</li>
-                      <li>input:invalid</li>
-                      <li>input:optional</li>
-                      <li>input:required</li>
-                      <li>input:read-only</li>
-                      <li>input:read-write</li>
-                      <li>div:empty</li>
-                      <li>p::first-letter</li>
-                      <li>p::first-line</li>
-                      <li>p:first-of-type</li>
-                      <li>p:last-of-type</li>
-                      <li>p:lang(en)</li>
-                      <li>:not(span)</li>
-                      <li>p:first-child</li>
-                      <li>p:last-child</li>
-                      <li>p:nth-child(2)</li>
-                      <li>p:nth-child(3n+1)</li>
-                      <li>p:nth-last-child(2)</li>
-                      <li>p:nth-of-type(2)</li>
-                      <li>p:nth-last-of-type(2)</li>
-                      <li>p:only-of-type</li>
-                      <li>p:only-child</li>
-                      <li>:root</li>
-                      <li>::selection</li>
-                      <li>:target</li>
-                  </ul>
-
-                  <ul class="section-italic-text">
-                      <li>link in normal state</li>
-                      <li>link in clicked state</li>
-                      <li>link with mouse over it</li>
-                      <li>visited link</li>
-                      <li>add content after p</li>
-                      <li>add content before p</li>
-                      <li>checked inputs</li>
-                      <li>disabled inputs</li>
-                      <li>enabled inputs</li>
-                      <li>input has focus</li>
-                      <li>value in range</li>
-                      <li>input value out of range</li>
-                      <li>input with valid value</li>
-                      <li>input with invalid value</li>
-                      <li>no required attribute</li>
-                      <li>input with requred attribute</li>
-                      <li>with readonly attribute</li>
-                      <li>no readonly attrib.</li>
-                      <li>element with no children</li>
-                      <li>first letter in p</li>
-                      <li>first line in p</li>
-                      <li>first of some type</li>
-                      <li>last of some type</li>
-                      <li>p with en language attribute</li>
-                      <li>element that's not a span</li>
-                      <li>first child of its parent</li>
-                      <li>last child of its parent</li>
-                      <li>second child of its parent</li>
-                      <li>nth-child (an + b) formula</li>
-                      <li>second child from behind</li>
-                      <li>second p of its parent</li>
-                      <li>...from behind</li>
-                      <li>unique of its parent</li>
-                      <li>only child of its parent</li>
-                      <li>documents root element</li>
-                      <li>portion selected by user</li>
-                      <li>highlight active anchor</li>
-                  </ul>
+                           <div class="descriptionListing">
+								<div class="text-grid"><span class="section-bold-text">a:link </span><em class="section-italic-text">link in normal state</em></div>
+								<div class="text-grid"><span class="section-bold-text">a:active </span><em class="section-italic-text">link in clicked state</em></div>
+								<div class="text-grid"><span class="section-bold-text">a:hover </span><em class="section-italic-text">link with mouse over it</em></div>
+								<div class="text-grid"><span class="section-bold-text">a:visited </span><em class="section-italic-text">visited link</em></div>	
+								<div class="text-grid"><span class="section-bold-text">p::after{content:"yo";}</span><em class="section-italic-text">add content after p </em></div>
+								<div class="text-grid"><span class="section-bold-text">p::before </span><em class="section-italic-text">add content before p </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:checked </span><em class="section-italic-text">checked inputs </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:disabled </span><em class="section-italic-text">disabled inputs </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:enabled </span><em class="section-italic-text">enabled inputs </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:focus </span><em class="section-italic-text">input has focus </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:in-range </span><em class="section-italic-text">value in range </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:out-of-range </span><em class="section-italic-text">input value out of range </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:valid </span><em class="section-italic-text">input with valid value </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:invalid </span><em class="section-italic-text">input with invalid value </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:optional </span><em class="section-italic-text">no required attribute </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:required </span><em class="section-italic-text">input with requred attribute </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:read-only </span><em class="section-italic-text">with readonly attribute </em></div>
+								<div class="text-grid"><span class="section-bold-text">input:read-write </span><em class="section-italic-text">no readonly attrib. </em></div>
+								<div class="text-grid"><span class="section-bold-text">div:empty </span><em class="section-italic-text">element with no children </em></div>
+								<div class="text-grid"><span class="section-bold-text">p::first-letter </span><em class="section-italic-text">first letter in p </em></div>
+								<div class="text-grid"><span class="section-bold-text">p::first-line </span><em class="section-italic-text">first line in p </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:first-of-type </span><em class="section-italic-text">first of some type </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:last-of-type </span><em class="section-italic-text">last of some type </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:lang(en) </span><em class="section-italic-text">p with en language attribute </em></div>
+								<div class="text-grid"><span class="section-bold-text">:not(span) </span><em class="section-italic-text">element that's not a span </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:first-child </span><em class="section-italic-text">first child of its parent </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:last-child </span><em class="section-italic-text">last child of its parent </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:nth-child(2) </span><em class="section-italic-text">second child of its parent </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:nth-child(3n+1) </span><em class="section-italic-text">nth-child (an + b) formula</em></div>
+								<div class="text-grid"><span class="section-bold-text">p:nth-last-child(2) </span><em class="section-italic-text">second child from behind </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:nth-of-type(2) </span><em class="section-italic-text">second p of its parent </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:nth-last-of-type(2) </span><em class="section-italic-text">...from behind </em></div>
+								<div class="text-grid"><span class="section-bold-text">p:only-of-type </span><em class="section-italic-text">unique of its parent</em></div>
+								<div class="text-grid"><span class="section-bold-text">p:only-child </span><em class="section-italic-text">only child of its parent</em></div>
+								<div class="text-grid"><span class="section-bold-text">:root </span><em class="section-italic-text">documents root element </em></div>
+								<div class="text-grid"><span class="section-bold-text">::selection </span><em class="section-italic-text">portion selected by user </em></div>
+								<div class="text-grid"><span class="section-bold-text">:target </span><em class="section-italic-text">highlight active anchor </em></div>
+							</div>
                </div>
 
                <div class="section-subheader">
@@ -128,27 +73,16 @@
                </div>
                
                <div class="flex items-center justify-between px-2.5">
-                  <ul class="section-bold-text">
-                      <li>a[target]</li>
-                      <li>a[target="_blank"]</li>
-                      <li>[title~="chair"]</li>
-                      <li>[class^="chair"]</li>
-                      <li>[class|="chair"]</li>
-                      <li>[class*="chair"]</li>
-                      <li>[class$="chair"]</li>
-                      <li>input[type="button"]</li>
-                  </ul>
-
-                  <ul class="section-italic-text">
-                      <li>links with a target attribute</li>
-                      <li>links which open in new tab</li>
-                      <li>title element containing a word</li>
-                      <li>class starts with chair</li>
-                      <li>class starts with the chair word</li>
-                      <li>class contains chair</li>
-                      <li>class ends with chair</li>
-                      <li>specified input type</li>
-                  </ul>
+                            <div class="descriptionListing noscroller">
+								<div class="text-grid"><span class="section-bold-text">a[target] </span><em class="section-italic-text">links with a target attribute </em></div>
+								<div class="text-grid"><span class="section-bold-text">a[target="_blank"] </span><em class="section-italic-text">links which open in new tab </em></div>
+								<div class="text-grid"><span class="section-bold-text">[title~="chair"] </span><em class="section-italic-text">title element containing a word </em></div>
+								<div class="text-grid"><span class="section-bold-text">[class^="chair"] </span><em class="section-italic-text">class starts with chair </em></div>
+								<div class="text-grid"><span class="section-bold-text">[class|="chair"] </span><em class="section-italic-text">class starts with the chair word </em></div>
+								<div class="text-grid"><span class="section-bold-text">[class*="chair"] </span><em class="section-italic-text">class contains chair </em></div>
+								<div class="text-grid"><span class="section-bold-text">[class$="chair"] </span><em class="section-italic-text">class ends with chair </em></div>
+								<div class="text-grid"><span class="section-bold-text">input[type="button"] </span><em class="section-italic-text">specified input type </em></div>
+							</div>
                </div>
             </template>
         </Section>
