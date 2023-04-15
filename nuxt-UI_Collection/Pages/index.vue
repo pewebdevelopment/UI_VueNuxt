@@ -2,7 +2,7 @@
     <div class="p-4 mt-24">
 
         <!-- navigation tabs -->
-               <div class="navigationtabs">
+        <div class="navigationtabs">
 					<nav>
 						<ul class="text-white">
 							<li><a href="/" class="bg-[#CE5937] rounded-l-2xl" title="HTML Cheat Sheet" style="font-size: 20px; margin-bottom: 2px; padding: 4px 15px;">HTML</a></li>
@@ -13,15 +13,19 @@
 							<li><a href="/seo/" class="bg-white shadow-xl rounded-l-2xl" title="SEO Cheat Sheet" style="font-size: 20px; margin-bottom: 2px; padding: 4px 15px;"><strong class="text-blue-500">S</strong><strong class="text-red-600">E</strong><strong class="text-green-600">O</strong></a></li>
 						</ul>
 					</nav>
-				</div>
+		</div>
+
+        <div class="fixed top-0 right-0 w-auto h-auto z-50 bg-gray-200 dark:bg-gray-900  inline-flex justify-center items-center">
+        <button @click="toggle" class="bg-[$colorMode.value] h-[34px] w-[34px]"><icon class="dark:text-gray-200" name="uil:lightbulb-alt"/> </button>
+        </div>
 
         <!-- Code editor start -->
         <div @click="callEditor" class="z-40 cursor-pointer fixed bottom-0 left-[40px] rounded-t-sm rounded-b-md w-[30px] h-[30px] flex justify-center items-start mt-1 border-t-[5px] border-r-[3.5px] border-[2px] bg-white border-gray-500">
             <div class="w-[12px] h-[12px] bg-gray-500 mt-1"></div>
         </div>
 
-        <div id="editor" class="z-50 fixed bottom-[-400px] w-full p-2 rounded-t-xl bg-[#ededed]">
-            <div @click="returnEditor" class="cursor-pointer absolute top-[-34px] right-[60px] mr-8 p-2 bg-[#ededed] rounded-md"><icon class="text-gray-500 text-[24px]" name="uil:arrow-down-right" /></div>
+        <div id="editor" class="z-50 fixed bottom-[-400px] w-full p-2 rounded-t-xl bg-[#ededed] dark:bg-gray-400">
+            <div @click="returnEditor" class="cursor-pointer absolute top-[-34px] right-[60px] mr-8 p-2 bg-[#ededed] dark:bg-gray-400 rounded-md"><icon class="text-gray-500 text-[24px]" name="uil:arrow-down-right" /></div>
 
             <div class="relative w-12/12">
             <Code-Editor-Call />
@@ -31,7 +35,7 @@
 
         <!-- back to top -->
         <div class="z-40 fixed bottom-[20px] right-0 p-4 rotate-[-90deg]">
-            <a id="back2Top" title="Back to top" href="#" style="display: inline;" class=" text-gray-500 text-[30px]">➤</a>
+            <a id="back2Top" title="Back to top" href="#" style="display: inline;" class=" text-gray-500 dark:text-gray-200 text-[30px]">➤</a>
         </div>
 
         <!-- cheatsheet header -->
@@ -65,7 +69,13 @@
 
 <script>
 export default {
+    
     methods: {
+    toggle() {
+      this.$colorMode.preference =
+        this.$colorMode.value == "light" ? "dark" : "light";
+        console.log($$colorMode.value)
+    },
         callEditor(){
            document.getElementById('editor').style.bottom = '0px'
         },
@@ -77,28 +87,26 @@ export default {
 </script>
 
 <style scoped>
-.navigationtabs {
-    display: inline-block;
-    float: right;
-    position: fixed;
-    top: 70px;
-    right: 8px;
-    z-index: 4000;
-}
-
-.navigationtabs ul li {
-    display: block;
-    text-align: right;
-    font-size: 20px;
-    margin-bottom: 2px;
-    padding: 4px 15px;
-}
-
-.navigationtabs a.jqColor {
-    background-color: rgba(6,105,173,0.9);
-    background-image: url(/images/logo-jquery.png);
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-size: contain;
-}
-</style>
+ .navigationtabs {
+     display: inline-block;
+     float: right;
+     position: fixed;
+     top: 70px;
+     right: 8px;
+     z-index: 4000;
+ }
+ .navigationtabs ul li {
+     display: block;
+     text-align: right;
+     font-size: 20px;
+     margin-bottom: 2px;
+     padding: 4px 15px;
+ }
+ .navigationtabs a.jqColor {
+     background-color: rgba(6,105,173,0.9);
+     background-image: url(/images/logo-jquery.png);
+     background-repeat: no-repeat;
+     background-position: center left;
+     background-size: contain;
+ }
+ </style>

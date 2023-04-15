@@ -13,7 +13,7 @@
 											Image URL:
 										</div>
 										<div class="settingRowInput flex flex-col">
-											<input id="backgroundImageUrl" value="https://htmlcheatsheet.com/images/logo-css.png">
+											<input class="dark:bg-gray-700" id="backgroundImageUrl" value="https://htmlcheatsheet.com/images/logo-css.png">
 											<span id="backgroundImageNone">&nbsp;none&nbsp;</span>
 										</div>
 									</div>
@@ -116,9 +116,9 @@
                                 <!-- preview -->
 								<div class="dividedControlsRight">
 									<div id="backgroundPreviewWrap">
-										<div id="backgroundPeview" class="font-bold text-[20px] text-center" style="background: url(&quot;https://htmlcheatsheet.com/images/logo-css.png&quot;) 0px 0px no-repeat scroll rgb(208, 228, 245);">
+										<div id="backgroundPeview" class="font-bold text-[20px] text-center dark:text-[#333]" style="background: url(&quot;https://htmlcheatsheet.com/images/logo-css.png&quot;) 0px 0px no-repeat scroll rgb(208, 228, 245);">
 											Preview
-										<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+										<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="" style="z-index: 90;"></div></div>
 									</div>
 								</div>
 

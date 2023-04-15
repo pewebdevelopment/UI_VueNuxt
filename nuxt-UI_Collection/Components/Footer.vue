@@ -1,6 +1,6 @@
 <template>
     <div class="w-full">
-        <div class="footer border-t-[3px] border-t-[#1C6EA4]">
+        <div class="footer border-t-[3px] border-t-[#1C6EA4] dark:text-gray-200">
 			HTML Cheat Sheet is using cookies. | <a href="/css/CSS-Cheat-Sheet.pdf" target="_blank">PDF</a> | <a href="https://html-css-js.com/terms-privacy/" target="_blank">Terms and Conditions, Privacy Policy</a><br>
 			© HTMLCheatSheet.com
 		</div>

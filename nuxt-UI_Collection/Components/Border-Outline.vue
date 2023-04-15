@@ -10,7 +10,7 @@
                                     <!-- image url -->
                                 <!-- preview -->
 									<div class="w-full h-[100px] mb-4 bg-[#eee]">
-										<div class="font-bold body-text text-center text-white h-full flex items-center justify-center">
+										<div class="font-bold body-text text-center text-white dark:text-[#333] h-full flex items-center justify-center">
 											Preview
                                         </div>
 									</div>

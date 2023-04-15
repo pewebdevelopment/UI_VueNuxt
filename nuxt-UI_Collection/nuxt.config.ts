@@ -2,6 +2,15 @@
 export default ({
     modules: [
         '@nuxtjs/tailwindcss',
-        'nuxt-icon'
+        'nuxt-icon',
+        '@nuxtjs/color-mode',
       ],
+      purgeCSS: {
+        whitelist: ['dark-mode'],
+      },
+      colorMode: {
+        classSuffix: ''
+      },
+    
+
 })

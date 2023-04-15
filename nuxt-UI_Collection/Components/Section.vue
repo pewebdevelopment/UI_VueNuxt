@@ -5,9 +5,9 @@
                 <slot name="header" />
             </h2>
             <ul class="flex mr-[24px]">
-                <li><icon class="rounded-sm bg-white m-[1px] text-[#bbb]" name="uil:question" /></li>
-                <li><icon class="rounded-sm bg-white m-[1px] text-[#bbb]" name="uil:arrow-up-left" /></li>
-                <li><icon class="rounded-sm bg-white m-[1px] text-[#bbb]" name="uil:times" /></li>
+                <li><icon class="rounded-sm bg-white dark:bg-gray-600 m-[1px] text-[#bbb] dark:text-gray-100" name="uil:question" /></li>
+                <li><icon class="rounded-sm bg-white dark:bg-gray-600 m-[1px] text-[#bbb] dark:text-gray-100" name="uil:arrow-up-left" /></li>
+                <li><icon class="rounded-sm bg-white dark:bg-gray-600 m-[1px] text-[#bbb] dark:text-gray-100" name="uil:times" /></li>
             </ul>
         </div>
         <div><slot name="content" /></div>
