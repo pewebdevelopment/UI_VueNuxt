@@ -226,5 +226,84 @@
   "heading": "Dates  📆",
   "description": "Working with Dates",
   "content": "<span class=\"comment\">Tue Apr 11 2023 09:35:14 GMT+0530 (India Standard Time)</span>\nvar d = <span class=\"highlight\">new</span> Date();\n<span class=\"comment\">1681185914131 miliseconds passed since 1970</span>\n<span class=\"highlight\">Number</span>(d) \n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017-06-23\"</span>);                 <span class=\"comment\">// date declaration</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017\"</span>);                       <span class=\"comment\">// is set to Jan 01</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017-06-23T12:00:00-09:45\"</span>);  <span class=\"comment\">// date - time YYYY-MM-DDTHH:MM:SSZ</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"June 23 2017\"</span>);               <span class=\"comment\">// long date format</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"Jun 23 2017 07:45:00 GMT+0100 (Tokyo Time)\"</span>); <span class=\"comment\">// time zone</span>"
+},
+{
+  "heading": "Arrays ≡",
+  "description": "Javascript arrays - multiple values in a single variable",
+  "content": "var dogs = [<span class=\"value\">\"Bulldog\"</span>, <span class=\"value\">\"Beagle\"</span>,<span class=\"value\"> \"Labrador\"</span>]; \nvar dogs = <span class=\"highlight\">new</span> Array(<span class=\"value\">\"Bulldog\"</span>, <span class=\"value\">\"Beagle\"</span>,<span class=\"value\"> \"Labrador\"</span>);  <span class=\"comment\">// declaration</span>\n\n<span class=\"highlight\">alert</span>(dogs[<span class=\"value\">1</span>]);             <span class=\"comment\">// access value at index, first item being [0]</span>\ndogs[0] = <span class=\"value\">\"Bull Terier\"</span>;    <span class=\"comment\">// change the first item</span>\n\n<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i < dogs.length; i++) {     <span class=\"comment\">// parsing with array.length</span>\nconsole.log(dogs[i]);\n}",
+  "data": [
+     {
+        "heading": "",
+        "content": "\ndogs.<span class=\"highlight\">toString()</span>;                        <span class=\"comment\">// convert to string: results \"Bulldog,Beagle,Labrador\"</span>\ndogs.<span class=\"highlight\">join</span>(<span class=\"value\">\" * \"</span>);                       <span class=\"comment\">// join: \"Bulldog * Beagle * Labrador\"</span>\ndogs.<span class=\"highlight\">pop()</span>;                             <span class=\"comment\">// remove last element</span>\ndogs.push(<span class=\"value\">\"Chihuahua\"</span>);                 <span class=\"comment\">// add new element to the end</span>\ndogs[dogs.length] = <span class=\"value\">\"Chihuahua\"</span>;        <span class=\"comment\">// the same as push</span>\ndogs.<span class=\"highlight\">shift()</span>;                           <span class=\"comment\">// remove first element</span>\ndogs.<span class=\"highlight\">unshift</span>(<span class=\"value\">\"Chihuahua\"</span>);              <span class=\"comment\">// add new element to the beginning</span>\ndelete dogs[<span class=\"value\">0</span>];                         <span class=\"comment\">// change element to undefined (not recommended)</span>\ndogs.<span class=\"highlight\">splice</span>(<span class=\"value\">2</span>,<span class=\"value\"> 0</span>,<span class=\"value\"> \"Pug\"</span>,<span class=\"value\"> \"Boxer\"</span>);      <span class=\"comment\">// add elements (where, how many to remove, element list)</span>\nvar animals = dogs.<span class=\"highlight\">concat</span>(cats,birds);  <span class=\"comment\">// join two arrays (dogs followed by cats and birds)</span>\ndogs.<span class=\"highlight\">slice</span>(<span class=\"value\">1</span>,<span class=\"value\">4</span>);                        <span class=\"comment\">// elements from [1] to [4-1]</span>\ndogs.<span class=\"highlight\">sort()</span>;                            <span class=\"comment\">// sort string alphabetically</span>\ndogs.<span class=\"highlight\">reverse();</span>                         <span class=\"comment\">// sort string in descending order</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return a - b});   <span class=\"comment\">// numeric sort</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return b - a});   <span class=\"comment\">// numeric descending sort</span>\nhighest = x[<span class=\"value\">0</span>];                         <span class=\"comment\">// first item in sorted array is the lowest (or highest) value</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return 0.5 - <span class=\"highlight\">Math.random()</span>});     <span class=\"comment\">// random order sort</span>"
+     },
+     {
+        "heading": "",
+        "content": "concat, copyWithin, every, fill, filter, find, findIndex, forEach, indexOf, isArray, join, lastIndexOf, map, pop, push, reduce, reduceRight, reverse, shift, slice, some, sort, splice, toString, unshift, valueOf"
+     }
+  ]
+},
+{
+  "heading": "JSON  j",
+  "description": "Javascript object Notation",
+  "content": "var str = '{\"names\":[' +                    <span class=\"comment\">// crate JSON object</span>\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Hakuna\"</span>,<span class=\"value\">\"lastN\"</span>:<span class=\"value\">\"Matata\"</span> },' +\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Jane\"</span>,<span class=\"value\">\"lastN\"</span>:<span class=\"value\">\"Doe\"</span> },' +\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Air\"</span>,<span class=\"value\">\"last\"</span>:<span class=\"value\">\"Jordan\" </span>}]}';\nobj = <span class=\"highlight\">JSON.parse</span>(str);                      <span class=\"comment\">// parse</span>\n<span class=\"highlight\">document.write</span>(obj.names[1].first);         <span class=\"comment\">// access</span>",
+  "data": [
+     {
+        "heading": "Send",
+        "content": "var myObj = { <span class=\"value\">\"name\"</span>:<span class=\"value\">\"Jane\"</span>,<span class=\"value\"> \"age\"</span>:<span class=\"value\">18</span>, <span class=\"value\">\"city\"</span>:<span class=\"value\">\"Chicago\" </span>};  <span class=\"comment\">// create object</span>\nvar myJSON = <span class=<span class=\"value\">\"highlight\"</span>JSON.stringify</span>(myObj);                         <span class=\"comment\">// stringify</span>\n<span class=\"highlight\">window.location</span> = \"demo.php?x=\" + myJSON; "
+     },
+     {
+        "heading": "Storing and retrieving",
+        "content": "myObj = { <span class=\"value\">\"name\"</span>:<span class=\"value\">\"Jane\"</span>, <span class=\"value\">\"age\"</span>:<span class=\"value\">18</span>,<span class=\"value\"> \"city\"</span>:<span class=\"value\">\"Chicago\"</span> };\nmyJSON = <span class=\"highlight\">JSON.stringify</span>(myObj);                 <span class=\"comment\">// storing data</span>\nlocalStorage.setItem(<span class=\"value\">\"testJSON\"</span>, myJSON);   \ntext = <span class=\"highlight\">localStorage.getItem</span>(<span class=\"value\">\"testJSON\"</span>);        <span class=\"comment\">// retrieving data</span> \nobj = JSON.parse(text);\ndocument.write(obj.name);"
+     }
+  ]
+},
+{
+  "heading": "xErrors  ⚠",
+  "description": "handling js errors, try catch, throw, finally",
+  "content": "<span class=\"highlight\">try</span> {                           <span class=\"comment\">// block of code to try</span>\nundefinedFunction();\n}\ncatch(err) {                    <span class=\"comment\">// block to handle errors</span>\nconsole.<span class=\"highlight\">log</span>(err.message);\n}",
+  "data": [
+     {
+        "heading": "Throw Error",
+        "content": "<span class=\"highlight\">throw</span> <span class=\"value\">\"My error message\"</span>;    <span class=\"comment\">// throw a text</span>"
+     },
+     {
+        "heading": "Input validation",
+        "content": "var x = document.getElementById(\"mynum\").value;<span class=\"comment\"> // get input value</span>\ntry { \nif(x == \"\")  throw \"empty\";                 <span class=\"comment\">// error cases</span>\nif(isNaN(x)) throw \"not a number\";\nx = Number(x);\nif(x > 10)   throw \"too high\";\n}\ncatch(err) {                                    <span class=\"comment\">// if there's an error</span>\ndocument.write(\"Input is \" + err);          <span class=\"comment\">// output error</span>\nconsole.error(err);                         <span class=\"comment\">// write the error in console</span>\n}\nfinally {\ndocument.write(\"</br />Done\");              <span class=\"comment\">// executed regardless of the try / catch result</span>"
+     },
+     {
+        "heading": "Error name values",
+        "content": "RangeErrorA number is \"out of range\"\nReferenceErrorAn illegal reference has occurred\nSyntaxErrorA syntax error has occurred\nTypeErrorA type error has occurred\nURIErrorAn encodeURI() error has occurred"
+     }
+  ]
+},
+{
+  "heading": "Useful Links↵",
+  "description": "A list of Useful resources",
+  "links": [
+     {
+        "name": "Js cleaner",
+        "link": ""
+     },
+     {
+        "name": "Obfuscator",
+        "link": ""
+     },
+     {
+        "name": "Can I use?",
+        "link": ""
+     },
+     {
+        "name": "Node.js",
+        "link": ""
+     },
+     {
+        "name": "jQuery",
+        "link": ""
+     },
+     {
+        "name": "Regex Tester",
+        "link": ""
+     }
+  ]
 }
 ]
