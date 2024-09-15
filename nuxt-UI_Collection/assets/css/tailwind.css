@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply w-full box-border bg-[#f8f8f8] dark:bg-slate-900
+}
+
+* {
+    @apply m-0 p-0
+}
+
+
+
+@layer components {
+
+    input, textarea {
+        @apply dark:bg-gray-700
+    }
+    .blue-text {@apply text-[#1C6EA4] dark:text-[#3ea1e2]}
+    .blue-background {@apply bg-[#1C6EA4]}
+    .light-blue-bg {@apply bg-[#d0e4f5]}
+    .body-text {@apply text-[13px]}
+
+    /* navigation */
+    .nav-container {@apply w-full flex flex-col fixed top-0 z-40}
+    .nav-links-wrapper {@apply w-full flex items-center}
+    .nav-links {@apply w-full py-[5px] text-[#eee] font-bold text-center cursor-pointer tracking-[5px] uppercase}
+
+    /* cheat sheet */
+    .cheatsheet-header {@apply flex items-center text-[24px] md:text-[32px] text-[#1C6EA4] font-bold pl-[20px]}
+    
+    /* section header */
+    .section {@apply text-[#444] dark:text-gray-100 bg-white dark:bg-gray-600 w-full md:max-w-[429px] rounded-lg relative py-2 md:mr-5 mb-[30px]}
+    .section-header {@apply inline-block text-[20px] text-[#555] dark:text-gray-100 capitalize bg-[#fff] dark:bg-gray-600 pt-[5px] px-[15px] rounded-t-lg}
+    .section-subheader {@apply w-full bg-[#1c6ea41a] dark:bg-gray-700 text-[12px] text-[#555] dark:text-gray-100 font-bold px-[5px] mt-3 mb-1}
+    .section-bold-text {@apply text-[13px] font-bold col-span-1}
+    .section-italic-text {@apply text-[13px] italic col-span-2}
+    .text-grid {
+        @apply grid grid-cols-3 gap-2
+    }
+
+    /* basics */
+    .margin {@apply w-full bg-[#B4CFE1] text-white text-[13px] text-center pt-[1px] px-[10px] pb-[9px]}
+    .border {@apply bg-[#3A81B0] pt-[1px] px-[10px] pb-[9px]}
+    .padding {@apply bg-[#82AFCD] pt-[1px] px-[10px] pb-[9px]}
+    .content {@apply bg-white text-[#444] pt-[1px] px-[10px] pb-[9px]}
+
+    /* useful links */
+    .useful-links-btn {@apply blue-text font-bold bg-[#eee] dark:bg-gray-700 rounded-lg inline-block px-[26px] py-[2px] mt-[5px] mr-[7px]}
+
+    /* how to use? */
+    .settingRow {@apply pb-[5px] flex w-full}
+    .settingRowLabel {@apply p-[5px] text-right text-[13px] w-[30%]}
+    .settingRowInput {@apply w-full justify-start pt-[7px] px-[8px]}
+    #backgroundImageUrl {@apply w-full p-0 m-0 border border-[#ccc] bg-white text-[12px] font-bold}
+    #backgroundImageNone {@apply blue-text text-[15px] font-bold cursor-pointer p-0 m-0}
+
+    /* background */
+    .jscolor {@apply w-[67px] text-[12px] border-[1px] border-[#ccc]}
+    #backgroundPeview {@apply py-[35px] px-[20px] border border-[#444] mb-2.5}
+    .backgroundResultWrap {@apply w-full px-2.5 pb-2.5 pt-[5px] text-[12px] text-right blue-background flex flex-col justify-end}
+    #backgroundResult {@apply p-1 text-left}
+
+    /* gradient */
+    .gradient-input {@apply border border-[#ccc] w-full md:w-[83px] h-[21px] py-[2px] px-[5px] body-text text-white}
+
+
+    /* slider */
+    .wrapBackgroundOpacity {@apply flex items-start justify-center}
+    .slider {@apply w-[100px] h-[13px] bg-[#eee] rounded-sm border-[1px] border-[#333]}
+    .slider-handle {@apply w-[39px] bg-[#f6f6f6] rounded-md border-[2px] border-[#444] text-[12px] font-bold text-center}
+    
+
+    /* code editor */
+    .editor-container {@apply md:max-w-[477.8px] md:mr-3.5 mb-2.5 h-[240px]}
+    .editor-wrapper {@apply flex items-start w-full h-full border-[1px] border-[#999] overflow-auto}
+    .preview-wrapper {@apply flex flex-col w-full h-full border-[1px] border-[#999] overflow-auto}
+    .editor-title {@apply blue-text text-[13px] font-bold uppercase}
+    .preview-title {@apply text-[#444] text-[13px] font-bold uppercase}
+    .side-plate {@apply w-[28px] h-full border-r border-r-[#ddd] bg-[#f7f7f7] text-[#999] text-right}
+    .preview-plate {@apply h-[28px] w-full border-t border-t-[#ddd] bg-[#f7f7f7] text-[#999] text-left}
+    .plate-number {@apply text-[13px] pr-[3px] pl-[5px]}
+    .textarea {@apply outline-none w-full min-w-[250px] h-full text-[12px] p-2}
+
+    /* article */
+    .article-wrapper {@apply w-full text-[16px] flex justify-center }
+    .article {@apply p-1 md:px-[25px] md:pt-[15px] md:pb-[10px] my-5 bg-white dark:bg-gray-600 dark:text-gray-100 max-w-[900px]}
+    .article article {@apply px-[25px] pt-[15px] pb-[10px] my-5}
+    .article-header {@apply text-[18px] blue-text font-bold leading-[1.5]}
+    .article-subheader {@apply font-bold}
+}
