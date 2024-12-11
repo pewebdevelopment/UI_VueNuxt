@@ -1,0 +1,309 @@
+[
+  {
+    "heading": "If - Else ⇵",
+    "description": "If else and Switch Statements",
+    "style": "row-span-1 col-span-1",
+    "content": "<span class=\"highlight\">if</span> ((age >= <span class=\"value\">14</span>) && (age < <span class=\"value\">19</span>)) {        <span class=\"comment\">// logical condition</span>\nstatus = <span class=\"value\">\"Eligible.\"</span>;               <span class=\"comment\">// executed if condition is true</span>\n} <span class=\"highlight\">else</span> {                                <span class=\"comment\">// else block is optional</span>\nstatus = <span class=\"value\">\"Not eligible.\"</span>;           <span class=\"comment\">// executed if condition is false</span>\n}",
+    "data": [
+      {
+        "heading": "Switch Statement",
+        "content": "<span class=\"highlight\">switch</span> (new Date().getDay()) {      <span class=\"comment\">// input is current day</span>\n<span class=\"highlight\">case</span> 6:                         <span class=\"comment\">// if (day == 6)</span>\n\ttext = <span class=\"value\">\"Saturday\"</span>;          \n\t<span class=\"highlight\">break;</span>\n<span class=\"highlight\">case</span> 0:                         <span class=\"comment\">// if (day == 0)</span>\n\ttext = <span class=\"value\">\"Sunday\"</span>;\n\t<span class=\"highlight\">break</span>;\n<span class=\"highlight\">default</span>:                        <span class=\"comment\">// else...</span>\n\ttext = <span class=\"value\">\"Whatever\"</span>;\n}"
+      }
+    ]
+  },
+  {
+    "heading": "Basics ➤",
+    "content": "",
+    "description": "Basic Syntax Introduction",
+    "style": "row-span-2 col-span-1",
+    "data": [
+      {
+        "heading": "On page script",
+        "content": "&lt;script type=<span class=\"value\">\"text/javascript\"</span>>  ...\n&lt;/script>"
+      },
+      {
+        "heading": "Include external JS file",
+        "content": "&lt;script src=<span class=\"value\">\"filename.js\"</span>>&lt;/script>"
+      },
+      {
+        "heading": "Delay - 1 second timeout",
+        "content": "<span class=\"highlight\">setTimeout</span>(function () {\n\n}, <span class=\"value\">1000</span>);"
+      },
+      {
+        "heading": "Functions",
+        "content": "function <span class=\"highlight\">addNumbers</span>(a, b) {\nreturn a + b; ;\n}\nx = <span class=\"highlight\">addNumbers</span>(<span class=\"value\">1</span>, <span class=\"value\">2</span>);"
+      },
+      {
+        "heading": "Edit DOM element",
+        "content": "<span class=\"highlight\">document.getElementById</span>(<span class=\"value\">\"elementID\"</span>).innerHTML = <span class=\"value\">\"Hello World!\"</span>;"
+      },
+      {
+        "heading": "Output",
+        "content": "console.log(a);             <span class=\"comment\">// write to the browser console</span>\ndocument.write(a);          <span class=\"comment\">// write to the HTML</span>\nalert(a);                   <span class=\"comment\">// output in an alert box</span>\nconfirm(<span class=\"value\">\"Really?\"</span>);         <span class=\"comment\">// yes/no dialog, returns true/false depending on user click</span>\nprompt(<span class=\"value\">\"Your age?\"</span>,<span class=\"value\">\"0\"</span>);    <span class=\"comment\">// input dialog. Second argument is the initial value</span>"
+      },
+      {
+        "heading": "Comments",
+        "content": "<span class=\"comment\">/* Multi line\ncomment */\n// One line</span>"
+      }
+    ]
+  },
+  {
+    "heading": "Data Types ℜ",
+    "content": "var age = <span class=\"value\">18</span>;                          <span class=\"comment\"> // number </span>\nvar name = <span class=\"value\">\"Jane\"</span>;                      <span class=\"comment\">// string</span>\nvar name = {first:<span class=\"value\">\"Jane\"</span>, last:<span class=\"value\">\"Doe\"</span>};  <span class=\"comment\">// object</span>\nvar truth = <span class=\"value\">false</span>;                      <span class=\"comment\">// boolean</span>\nvar sheets = <span class=\"value\">[\"HTML\",\"CSS\",\"JS\"]</span>;       <span class=\"comment\">// array</span>\nvar a; typeof a;                        <span class=\"comment\">// undefined</span>\nvar a = <span class=\"value\">null</span>;                           <span class=\"comment\">// value null</span>",
+    "description": "Javascript Variables and Objects",
+    "style": "row-span-1 col-span-1",
+    "data": [
+      {
+        "heading": "Objects",
+        "content": "var student = {                 <span class=\"comment\">// object name</span>\nfirstName:<span class=\"value\">\"Jane\"</span>,           <span class=\"comment\">// list of properties and values</span>\nlastName:<span class=\"value\">\"Doe\"</span>,\nage:<span class=\"value\">18</span>,\nheight:<span class=\"value\">170</span>,\n<span class=\"highlight\">fullName</span> : function() {     <span class=\"comment\">// object function</span>\n   <span class=\"highlight\">return</span> this.firstName + <span class=\"value\">\" \"</span> + this.lastName;\n}\n}; \nstudent.age = <span class=\"value\">19;</span>           <span class=\"comment\">// setting value</span>\nstudent[age]++;             <span class=\"comment\">// incrementing</span>\nname = student.fullName();  <span class=\"comment\">// call object function</span>"
+      }
+    ]
+  },
+  {
+    "heading": "Numbers and Math ∑",
+    "style": "row-span-2 col-span-1",
+    "description": "Working with numbers in javascript",
+    "content": "var pi = <span class=\"value\">3.141</span>;\npi.toFixed(<span class=\"value\">0</span>);          <span class=\"comment\">// returns 3</span>\npi.toFixed(<span class=\"value\">2</span>);          <span class=\"comment\">// returns 3.14 - for working with money</span>\npi.toPrecision(<span class=\"value\">2</span>)       <span class=\"comment\">// returns 3.1</span>\npi.valueOf();           <span class=\"comment\">// returns number</span>\n<span class=\"highlight\">Number</span>(<span class=\"value\">true</span>);           <span class=\"comment\">// converts to number</span>\n<span class=\"highlight\">Number</span>(new Date())      <span class=\"comment\">// number of milliseconds since 1970</span>\nparseInt(<span class=\"value\">\"3 months\"</span>);   <span class=\"comment\">// returns the first number: 3</span>\nparseFloat(<span class=\"value\">\"3.5 days\"</span>); <span class=\"comment\">// returns 3.5</span>\n<span class=\"highlight\">Number</span>.MAX_VALUE        <span class=\"comment\">// largest possible JS number</span>\n<span class=\"highlight\">Number</span>.MIN_VALUE        <span class=\"comment\">// smallest possible JS number</span>\n<span class=\"highlight\">Number</span>.NEGATIVE_INFINITY<span class=\"comment\">// -Infinity</span>\n<span class=\"highlight\">Number</span>.POSITIVE_INFINITY<span class=\"comment\">// Infinity</span>",
+    "data": [
+      {
+        "heading": "Math.",
+        "content": "var pi = <span class=\"highlight\">Math.PI</span>;       <span class=\"comment\">// 3.141592653589793</span>\n<span class=\"highlight\">Math.round</span>(<span class=\"value\">4.4</span>);        <span class=\"comment\">// = 4 - rounded</span>\n<span class=\"highlight\">Math.round</span>(<span class=\"value\">4.5</span>);        <span class=\"comment\">// = 5</span>\n<span class=\"highlight\">Math.pow</span>(<span class=\"value\">2</span>,<span class=\"value\">8</span>);          <span class=\"comment\">// = 256 - 2 to the power of 8</span>\n<span class=\"highlight\">Math.sqrt</span>(<span class=\"value\">49</span>);          <span class=\"comment\">// = 7 - square root</span> \n<span class=\"highlight\">Math.abs</span>(<span class=\"value\">-3.14</span>);        <span class=\"comment\">// = 3.14 - absolute, positive value</span>\n<span class=\"highlight\">Math.ceil</span>(<span class=\"value\">3.14</span>);        <span class=\"comment\">// = 4 - rounded up</span>\n<span class=\"highlight\">Math.floor</span>(<span class=\"value\">3.99</span>);       <span class=\"comment\">// = 3 - rounded down</span>\n<span class=\"highlight\">Math.sin</span>(<span class=\"value\">0</span>);            <span class=\"comment\">// = 0 - sine</span>\n<span class=\"highlight\">Math.cos</span>(<span class=\"highlight\">Math.PI</span>);      <span class=\"comment\">// OTHERS: tan,atan,asin,acos,</span>\n<span class=\"highlight\">Math.min</span>(<span class=\"value\">0</span>,<span class=\"value\"> 3</span>, <span class=\"value\">-2</span>,<span class=\"value\"> 2</span>);  <span class=\"comment\">// = -2 - the lowest value</span>\n<span class=\"highlight\">Math.max</span>(<span class=\"value\">0</span>,<span class=\"value\"> 3</span>);  <span class=\"comment\">// = 3 - the highest value</span>\n<span class=\"highlight\">Math.log</span>(<span class=\"value\">1</span>);            <span class=\"comment\">// = 0 natural logarithm</span> \n<span class=\"highlight\">Math.exp</span>(<span class=\"value\">1</span>);            <span class=\"comment\">// = 2.7182pow(E,x)</span>\n<span class=\"highlight\">Math.random()</span>;          <span class=\"comment\">// random number between 0 and 1</span>\n<span class=\"highlight\">Math.floor</span>(<span class=\"highlight\">Math.random()</span> * <span class=\"value\">5</span>) + <span class=\"value\">1</span>;  <span class=\"comment\">// random integer, from 1 to 5</span>"
+     },
+      {
+        "heading": "Constants like Math.PI:",
+        "content": "E, PI, SQRT2, SQRT1_2, LN2, LN10, LOG2E, Log10E"
+     }
+    ]
+  },
+  {
+    "heading": "Loops ↶",
+    "style": "row-span-2 col-span-1",
+    "description": "Cycle Through a block of code number of times",
+    "content": "",
+    "data": [
+      {
+        "heading": "For Loop",
+        "content": "<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i < <span class=\"value\">10</span>; i++) {\n<span class=\"highlight\">document.write</span>(i + <span class=\"value\">\": \"</span> + i*<span class=\"value\">3</span> + <span class=\"value\">\"&lt;br /&gt;\"</span>);\n}\nvar sum = <span class=\"value\">0</span>;\n<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i < a.length; i++) {\nsum + = a[i];\n}               <span class=\"comment\">// parsing an array</span>\nhtml = \"\";\n<span class=\"highlight\">for</span> (var i of custOrder) {\nhtml += <span class=\"value\">\"&lt;li>\"</span> + i + <span class=\"value\">\"&lt;/li>\"</span>;\n}"
+      },
+      {
+        "heading": "While Loop",
+        "content": "var i = 1;                      <span class=\"comment\">// initialize</span>\n<span class=\"highlight\">while</span> (i < <span class=\"value\">100</span>) {               <span class=\"comment\">// enters the cycle if statement is true</span>\ni *= <span class=\"value\">2</span>;                     <span class=\"comment\">// increment to avoid infinite loop</span>\n<span class=\"highlight\">document.write</span>(i + <span class=\"value\">\", \"</span>);   <span class=\"comment\">// output</span>\n}"
+      },
+      {
+        "heading": "Do While Loop",
+        "content": "var i = <span class=\"value\">1</span>;                      <span class=\"comment\">// initialize</comment>\n<span class=\"highlight\">do</span> {                            <span class=\"comment\">// enters cycle at least once</span>\ni *= <span class=\"value\">2</span>;                     <span class=\"comment\">// increment to avoid infinite loop</span>\n<span class=\"highlight\">document.write</span>(i + <span class=\"value\">\", \"</span>);   <span class=\"comment\">// output</span>\n} <span class=\"highlight\">while</span> (i < <span class=\"value\">100</span>)               <span class=\"comment\">// repeats cycle if statement is true at the end</span>"
+      },
+      {
+        "heading": "Break",
+        "content": "<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i < <span class=\"value\">10</span>; i++) {\n<span class=\"highlight\">if</span> (i == <span class=\"value\">5</span>) { <span class=\"highlight\">break;</span> }          <span class=\"comment\">// stops and exits the cycle</span>\n<span class=\"highlight\">document.write</span>(i + <span class=\"value\">\", \"</span>);       <span class=\"comment\">// last output number is 4</span>\n}"
+      },
+      {
+        "heading": "Continue",
+        "content": "<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i <span <span class=\"value\">10</span>; i++) {\n<span class=\"highlight\">if</span> (i == <span class=\"value\">5</span>) { <span class=\"highlight\">continue;</span> }       <span class=\"comment\">// skips the rest of the cycle</span>\n<span class=\"highlight\">document.write</span>(i + <span class=\"value\">\", \"</span>);       <span class=\"comment\">// skips 5</span>\n}"
+      }
+    ]
+  },
+  {
+    "heading": "Strings ⊗",
+    "style": "row-span-1 col-span-1",
+    "description": "selectors specify which elements are targetted by a style",
+    "content": "var abc = <span class=\"value\">\"abcdefghijklmnopqrstuvwxyz\"</span>;\nvar len = abc.length;           <span class=\"comment\">// string length</span>\nabc.indexOf(<span class=\"value\">\"lmno\"</span>);            <span class=\"comment\">// find substring, -1 if doesn't contain</span> \nabc.lastIndexOf(<span class=\"value\">\"lmno\"</span>);        <span class=\"comment\">// last occurance</span>\nabc.slice(<span class=\"value\">3</span>, <span class=\"value\">6</span>);                <span class=\"comment\">// cuts out \"def\", negative values count from behind</span>\nabc.replace(<span class=\"value\">\"abc\"</span>,<span class=\"value\">\"123\"</span>);       <span class=\"comment\">// find and replace, takes regular expressions</span>\nabc.toUpperCase();              <span class=\"comment\">// convert to upper case</span>\nabc.toLowerCase();              <span class=\"comment\">// convert to lower case</span>\nabc.concat(<span class=\"value\">\" \"</span>, str2);          <span class=\"comment\">// abc + \" \" + str2</span>\nabc.charAt(<span class=\"value\">2</span>);                  <span class=\"comment\">// character at index: \"c\"</span>\nabc[<span class=\"value\">2</span>];                         <span class=\"comment\">// unsafe, abc[2] = \"C\" doesn't work</span>\nabc.charCodeAt(<span class=\"value\">2</span>);              <span class=\"comment\">// character code at index: \"c\" -> 99</span>\nabc.split(<span class=\"value\">\",\"</span>);                 <span class=\"comment\">// splitting a string on commas gives an array</span>\nabc.split(<span class=\"value\">\"\"</span>);                  <span class=\"comment\">// splitting on characters</span>\n128.toString(<span class=\"value\">16</span>);               <span class=\"comment\">// number to hex(16), octal (8) or binary (2)</span>"
+  },
+  {
+    "heading": "Events🕖",
+    "description": "Event handlers in javascript",
+    "style": "row-span-2 col-span-1",
+    "content": "&lt;<span class=\"highlight\">button</span> onclick=<span class=\"value\">\"myFunction();\"</span>>\nClick here\n&lt;/<span class=\"highlight\">button</span>>",
+    "data": [
+      {
+        "heading": "Mouse",
+        "content": "onclick, oncontextmenu, ondblclick, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseover, onmouseout, onmouseup\n"
+      },
+      {
+        "heading": "Keyboard",
+        "content": "onkeydown, onkeypress, onkeyup"
+      },
+      {
+        "heading": "Frame",
+        "content": "onabort, onbeforeunload, onerror, onhashchange, onload, onpageshow, onpagehide, onresize, onscroll, onunload"
+      },
+      {
+        "heading": "Form",
+        "content": "onblur, onchange, onfocus, onfocusin, onfocusout, oninput, oninvalid, onreset, onsearch, onselect, onsubmit"
+      },
+      {
+        "heading": "Drag",
+        "content": "ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop"
+      },
+      {
+        "heading": "Clipboard",
+        "content": "oncopy, oncut, onpaste"
+      },
+      {
+        "heading": "Media",
+        "content": "onabort, oncanplay, oncanplaythrough, ondurationchange, onended, onerror, onloadeddata, onloadedmetadata, onloadstart, onpause, onplay, onplaying, onprogress, onratechange, onseeked, onseeking, onstalled, onsuspend, ontimeupdate, onvolumechange, onwaiting"
+      },
+      {
+        "heading": "Animation",
+        "content": "animationend, animationiteration, animationstart"
+      },
+      {
+        "heading": "Miscellaneous",
+        "content": "transitionend, onmessage, onmousewheel, ononline, onoffline, onpopstate, onshow, onstorage, ontoggle, onwheel, ontouchcancel, ontouchend, ontouchmove, ontouchstart"
+      }
+    ]
+  },
+  {
+   "heading": "Variables X",
+   "style": "row-span-3 col-span-1",
+   "description": "Javascript variables and operators",
+   "content": "var a;                          <span class=\"comment\">// variable</span>\nvar b = <span class=\"value\">\"init\"</span>;                 <span class=\"comment\">// string</span>\nvar c = <span class=\"value\">\"Hi\"</span> +<span class=\"value\"> \" \"</span> + \"<span class=\"value\">Joe\"</span;     <span class=\"comment\">// = \"Hi Joe\"</span>\nvar d = <span class=\"value\">1</span> + <span class=\"value\">2 </span>+ <span class=\"value\">\"3\"</span>;            <span class=\"comment\">// = \"33\"</span>\nvar e = <span class=\"value\">[2,3,5,8]</span>;              <span class=\"comment\">// array</span>\nvar f = <span class=\"value\">false</span>;                  <span class=\"comment\">// boolean</span>\nvar g = /()/;                   <span class=\"comment\">// RegEx</span>\nvar h = function(){};           <span class=\"comment\">// function object</span>\nconst PI = <span class=\"value\">3.14</span>;                <span class=\"comment\">// constant</span>\nvar a = <span class=\"value\">1</span>, b = <span class=\"value\">2</span>, c = a + b;    <span class=\"comment\">// one line</span>\nlet z = <span class=\"value\">'zzz'</span>;                  <span class=\"comment\">// block scope local variable</span>",
+   "data": [
+    {
+       "heading": "Strict mode",
+       "content": "\"use strict\";   <span class=\"comment\">// Use strict mode to write secure code</span>\nx = <span class=\"value\">1</span>;          <span class=\"comment\">// Throws an error because variable is not declared</span>"
+    },
+    {
+       "heading": "Values",
+       "content": "<span class=\"value\">false, true</span>                     <span class=\"comment\">// boolean</span>\n<span class=\"value\">18, 3.14, 0b10011, 0xF6, NaN</span>    <span class=\"comment\">// number</span>\n<span class=\"value\">\"flower\", 'John'</span>                <span class=\"comment\">// string</span>\n<span class=\"value\">undefined, null , Infinity</span>      <span class=\"comment\">// special</span>"
+    },
+    {
+       "heading": "Operators",
+       "content": "a = b + c - d;      <span class=\"comment\">// addition, substraction</span>\na = b * (c / d);    <span class=\"comment\">// multiplication, division</span>\nx = <span class=\"value\">100 % 48</span>;       <span class=\"comment\">// modulo. 100 / 48 remainder = 4</span>\na++; b--;           <span class=\"comment\">// postfix increment and decrement</span>"
+    },
+    {
+       "heading": "Bitwise operators",
+       "content": "\n&\tAND \t <span class=\"comment\">5 & 1 (0101 & 0001)\t1 (1)</span>\n|\tOR \t <span class=\"comment\">5 | 1 (0101 | 0001)\t5 (101)</span>\n~\tNOT \t <span class=\"comment\">~ 5 (~0101)\t10 (1010)</span>\n^\tXOR \t <span class=\"comment\">5 ^ 1 (0101 ^ 0001)\t4 (100)</span>\n<<\tleft shift \t <span class=\"comment\">5 << 1 (0101 << 1)\t10 (1010)</span>\n>>\tright shift \t <span class=\"comment\">5 >> 1 (0101 >> 1)\t2 (10)</span>\n>>>\tzero fill right shift \t <span class=\"comment\">5 >>> 1 (0101 >>> 1)\t2 (10)</span>"
+    },
+    {
+       "heading": "Arithmetic",
+       "content": "a * (b + c)         <span class=\"comment\">// grouping</span>\nperson.age          <span class=\"comment\">// member</span>\nperson[age]         <span class=\"comment\">// member</span>\n!(a == b)           <span class=\"comment\">// logical not</span>\na != b              <span class=\"comment\">// not equal</span>\ntypeof a            <span class=\"comment\">// type (number, object, function...)</span>\nx << 2  x >> 3      <span class=\"comment\">// minary shifting</span>\na = b               <span class=\"comment\">// assignment</span>\na == b              <span class=\"comment\">// equals</span>\na != b              <span class=\"comment\">// unequal</span>\na === b             <span class=\"comment\">// strict equal</span>\na !== b             <span class=\"comment\">// strict unequal</span>\na < b   a > b       <span class=\"comment\">// less and greater than</span>\na <= b  a >= b      <span class=\"comment\">// less or equal, greater or eq</span>\na += b              <span class=\"comment\">// a = a + b (works with - * %...)</span>\na && b              <span class=\"comment\">// logical and</span>\na || b              <span class=\"comment\">// logical or</span>"
+    }
+ ]
+},
+{
+  "heading": "Global Functions ()",
+  "description": "Common Js Functions",
+  "style": "row-span-1 col-span-1",
+  "content": "<span class=\"highlight\">eval()</span>;                     <span class=\"comment\">// executes a string as if it was script code</span>\n<span class=\"highlight\">String</span>(<span class=\"value\">23</span>);                 <span class=\"comment\">// return string from number</span>\n(<span class=\"value\">23</span>).<span class=\"highlight\">toString()</span>;            <span class=\"comment\">// return string from number</span>\nNumber(<span class=\"value\">\"23\"</span>);               <span class=\"comment\">// return number from string</span>\n<span class=\"highlight\">decodeURI(enc)</span>;             <span class=\"comment\">// decode URI. Result: \"my page.asp\"</span>\n<span class=\"highlight\">encodeURI(uri)</span>;             <span class=\"comment\">// encode URI. Result: \"my%page.asp\"</span>\ndecodeURIComponent(enc);    <span class=\"comment\">// decode a URI component</span>\nencodeURIComponent(uri);    <span class=\"comment\">// encode a URI component</span>\n<span class=\"highlight\">isFinite()</span>;                 <span class=\"comment\">// is variable a finite, legal number</span>\n<span class=\"highlight\">isNaN()</span>;                    <span class=\"comment\">// is variable an illegal number</span>\n<span class=\"highlight\">parseFloat()</span>;               <span class=\"comment\">// returns floating point number of string</span>\n<span class=\"highlight\">parseInt()</span>;                 <span class=\"comment\">// parses a string and returns an integer</span>"
+},
+{
+  "heading": "Promises Þ",
+  "style": "row-span-2 col-span-1",
+  "description": "An object, used for asynchronous computations. A Promise represents a value which may be available now, or in the future, or never. ",
+  "content": "function <span class=\"highlight\">sum</span> (a, b) {\nreturn <span class=\"highlight\">Promise</span>(function (resolve, reject) { \n setTimeout(function () {                                       <span class=\"comment\">// send the response after 1 second</span>\n   <span class=\"highlight\">if</span> (typeof a !== <span class=\"value\">\"number\"</span> || typeof b !== <span class=\"value\">\"number\"</span>) {        <span class=\"comment\">// testing input types</span>\n\t <span class=\"highlight\">return</span> reject(new TypeError(<span class=\"value\">\"Inputs must be numbers\"</span>));\n   }\n   resolve(a + b);\n }, <span class=\"value\">1000</span>);\n});\n}\nvar myPromise = sum(<span class=\"value\">10</span>, <span class=\"value\">5</span>);\nmyPromsise.then(function (result) {\n<span class=\"highlight\">document.write</span>(<span class=\"value\">\" 10 + 5: \"</span>, result);\n<span class=\"highlight\">return</span> sum(null, <span class=\"value\">\"foo\"</span>);              <span class=\"comment\">// Invalid data and return another promise</span>\n}).then(function () {                   <span class=\"comment\">// Won't be called because of the error</span>\n}).catch(function (err) {               <span class=\"comment\">// The catch handler is called instead, after another second</span>\nconsole.error(err);                   <span class=\"comment\">// => Please provide two numbers to sum.</span>",
+  "data": [
+     {
+        "heading": "Methods",
+        "content": "Promise.all(iterable), Promise.race(iterable), Promise.reject(reason), Promise.resolve(value)"
+     },
+     {
+        "heading": "States",
+        "content": "pending, fulfilled, rejected"
+     },
+     {
+        "heading": "Properties",
+        "content": "Promise.length, Promise.prototype"
+     }
+  ]
+},
+{
+  "heading": "Regular Expressions \n",
+  "description": "Javascript regular expression cheatsheet",
+  "content": "var a = str.<span class=\"highlight\">search</span>(<span class=\"value\">/CheatSheet/i</span>);",
+  "data": [
+     {
+        "heading": "Modifiers",
+        "content": "i                      perform case-insensitive matching\ng                      perform a global match\nm                      perform multiline matching"
+     },
+     {
+        "heading": "Patterns",
+        "content": "\nfind               match at beginning or end of a word\nn+                 contains at least one n\nn*                 contains zero or more occurrences of n\nn?                 contains zero or one occurrences of n\n^                  Start of string\n$                  End of string\n.                  Any single character\n(a|b)              a or b\n(...)              Group section\n[abc]              In range (a, b or c)\n[0-9]              any of the digits between the brackets\n[^abc]             Not in range\na?                 Zero or one of a\na*                 Zero or more of a\na*?                Zero or more, ungreedy\na+                 One or more of a\na+?                One or more, ungreedy\na{2}              Exactly 2 of a\na{2,}             2 or more of a\na{,5}             Up to 5 of a\na{2,5}           2 to 5 of a\na{2,5}?         2 to 5 of a, ungreedy\n[:punct:]        Any punctu­ation symbol\n[:space:]       Any space character\n[:blank:]       Space or tab"
+     }
+  ]
+},
+{
+  "heading": "Dates  📆",
+  "description": "Working with Dates",
+  "content": "<span class=\"comment\">Tue Apr 11 2023 09:35:14 GMT+0530 (India Standard Time)</span>\nvar d = <span class=\"highlight\">new</span> Date();\n<span class=\"comment\">1681185914131 miliseconds passed since 1970</span>\n<span class=\"highlight\">Number</span>(d) \n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017-06-23\"</span>);                 <span class=\"comment\">// date declaration</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017\"</span>);                       <span class=\"comment\">// is set to Jan 01</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"2017-06-23T12:00:00-09:45\"</span>);  <span class=\"comment\">// date - time YYYY-MM-DDTHH:MM:SSZ</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"June 23 2017\"</span>);               <span class=\"comment\">// long date format</span>\n<span class=\"highlight\">Date</span>(<span class=\"value\">\"Jun 23 2017 07:45:00 GMT+0100 (Tokyo Time)\"</span>); <span class=\"comment\">// time zone</span>"
+},
+{
+  "heading": "Arrays ≡",
+  "description": "Javascript arrays - multiple values in a single variable",
+  "content": "var dogs = [<span class=\"value\">\"Bulldog\"</span>, <span class=\"value\">\"Beagle\"</span>,<span class=\"value\"> \"Labrador\"</span>]; \nvar dogs = <span class=\"highlight\">new</span> Array(<span class=\"value\">\"Bulldog\"</span>, <span class=\"value\">\"Beagle\"</span>,<span class=\"value\"> \"Labrador\"</span>);  <span class=\"comment\">// declaration</span>\n\n<span class=\"highlight\">alert</span>(dogs[<span class=\"value\">1</span>]);             <span class=\"comment\">// access value at index, first item being [0]</span>\ndogs[0] = <span class=\"value\">\"Bull Terier\"</span>;    <span class=\"comment\">// change the first item</span>\n\n<span class=\"highlight\">for</span> (var i = <span class=\"value\">0</span>; i < dogs.length; i++) {     <span class=\"comment\">// parsing with array.length</span>\nconsole.log(dogs[i]);\n}",
+  "data": [
+     {
+        "heading": "",
+        "content": "\ndogs.<span class=\"highlight\">toString()</span>;                        <span class=\"comment\">// convert to string: results \"Bulldog,Beagle,Labrador\"</span>\ndogs.<span class=\"highlight\">join</span>(<span class=\"value\">\" * \"</span>);                       <span class=\"comment\">// join: \"Bulldog * Beagle * Labrador\"</span>\ndogs.<span class=\"highlight\">pop()</span>;                             <span class=\"comment\">// remove last element</span>\ndogs.push(<span class=\"value\">\"Chihuahua\"</span>);                 <span class=\"comment\">// add new element to the end</span>\ndogs[dogs.length] = <span class=\"value\">\"Chihuahua\"</span>;        <span class=\"comment\">// the same as push</span>\ndogs.<span class=\"highlight\">shift()</span>;                           <span class=\"comment\">// remove first element</span>\ndogs.<span class=\"highlight\">unshift</span>(<span class=\"value\">\"Chihuahua\"</span>);              <span class=\"comment\">// add new element to the beginning</span>\ndelete dogs[<span class=\"value\">0</span>];                         <span class=\"comment\">// change element to undefined (not recommended)</span>\ndogs.<span class=\"highlight\">splice</span>(<span class=\"value\">2</span>,<span class=\"value\"> 0</span>,<span class=\"value\"> \"Pug\"</span>,<span class=\"value\"> \"Boxer\"</span>);      <span class=\"comment\">// add elements (where, how many to remove, element list)</span>\nvar animals = dogs.<span class=\"highlight\">concat</span>(cats,birds);  <span class=\"comment\">// join two arrays (dogs followed by cats and birds)</span>\ndogs.<span class=\"highlight\">slice</span>(<span class=\"value\">1</span>,<span class=\"value\">4</span>);                        <span class=\"comment\">// elements from [1] to [4-1]</span>\ndogs.<span class=\"highlight\">sort()</span>;                            <span class=\"comment\">// sort string alphabetically</span>\ndogs.<span class=\"highlight\">reverse();</span>                         <span class=\"comment\">// sort string in descending order</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return a - b});   <span class=\"comment\">// numeric sort</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return b - a});   <span class=\"comment\">// numeric descending sort</span>\nhighest = x[<span class=\"value\">0</span>];                         <span class=\"comment\">// first item in sorted array is the lowest (or highest) value</span>\nx.<span class=\"highlight\">sort</span>(function(a, b){return 0.5 - <span class=\"highlight\">Math.random()</span>});     <span class=\"comment\">// random order sort</span>"
+     },
+     {
+        "heading": "",
+        "content": "concat, copyWithin, every, fill, filter, find, findIndex, forEach, indexOf, isArray, join, lastIndexOf, map, pop, push, reduce, reduceRight, reverse, shift, slice, some, sort, splice, toString, unshift, valueOf"
+     }
+  ]
+},
+{
+  "heading": "JSON  j",
+  "description": "Javascript object Notation",
+  "content": "var str = '{\"names\":[' +                    <span class=\"comment\">// crate JSON object</span>\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Hakuna\"</span>,<span class=\"value\">\"lastN\"</span>:<span class=\"value\">\"Matata\"</span> },' +\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Jane\"</span>,<span class=\"value\">\"lastN\"</span>:<span class=\"value\">\"Doe\"</span> },' +\n'{<span class=\"value\">\"first\"</span>:<span class=\"value\">\"Air\"</span>,<span class=\"value\">\"last\"</span>:<span class=\"value\">\"Jordan\" </span>}]}';\nobj = <span class=\"highlight\">JSON.parse</span>(str);                      <span class=\"comment\">// parse</span>\n<span class=\"highlight\">document.write</span>(obj.names[1].first);         <span class=\"comment\">// access</span>",
+  "data": [
+     {
+        "heading": "Send",
+        "content": "var myObj = { <span class=\"value\">\"name\"</span>:<span class=\"value\">\"Jane\"</span>,<span class=\"value\"> \"age\"</span>:<span class=\"value\">18</span>, <span class=\"value\">\"city\"</span>:<span class=\"value\">\"Chicago\" </span>};  <span class=\"comment\">// create object</span>\nvar myJSON = <span class=<span class=\"value\">\"highlight\"</span>JSON.stringify</span>(myObj);                         <span class=\"comment\">// stringify</span>\n<span class=\"highlight\">window.location</span> = \"demo.php?x=\" + myJSON; "
+     },
+     {
+        "heading": "Storing and retrieving",
+        "content": "myObj = { <span class=\"value\">\"name\"</span>:<span class=\"value\">\"Jane\"</span>, <span class=\"value\">\"age\"</span>:<span class=\"value\">18</span>,<span class=\"value\"> \"city\"</span>:<span class=\"value\">\"Chicago\"</span> };\nmyJSON = <span class=\"highlight\">JSON.stringify</span>(myObj);                 <span class=\"comment\">// storing data</span>\nlocalStorage.setItem(<span class=\"value\">\"testJSON\"</span>, myJSON);   \ntext = <span class=\"highlight\">localStorage.getItem</span>(<span class=\"value\">\"testJSON\"</span>);        <span class=\"comment\">// retrieving data</span> \nobj = JSON.parse(text);\ndocument.write(obj.name);"
+     }
+  ]
+},
+{
+  "heading": "xErrors  ⚠",
+  "description": "handling js errors, try catch, throw, finally",
+  "content": "<span class=\"highlight\">try</span> {                           <span class=\"comment\">// block of code to try</span>\nundefinedFunction();\n}\ncatch(err) {                    <span class=\"comment\">// block to handle errors</span>\nconsole.<span class=\"highlight\">log</span>(err.message);\n}",
+  "data": [
+     {
+        "heading": "Throw Error",
+        "content": "<span class=\"highlight\">throw</span> <span class=\"value\">\"My error message\"</span>;    <span class=\"comment\">// throw a text</span>"
+     },
+     {
+        "heading": "Input validation",
+        "content": "var x = document.getElementById(\"mynum\").value;<span class=\"comment\"> // get input value</span>\ntry { \nif(x == \"\")  throw \"empty\";                 <span class=\"comment\">// error cases</span>\nif(isNaN(x)) throw \"not a number\";\nx = Number(x);\nif(x > 10)   throw \"too high\";\n}\ncatch(err) {                                    <span class=\"comment\">// if there's an error</span>\ndocument.write(\"Input is \" + err);          <span class=\"comment\">// output error</span>\nconsole.error(err);                         <span class=\"comment\">// write the error in console</span>\n}\nfinally {\ndocument.write(\"</br />Done\");              <span class=\"comment\">// executed regardless of the try / catch result</span>"
+     },
+     {
+        "heading": "Error name values",
+        "content": "RangeErrorA number is \"out of range\"\nReferenceErrorAn illegal reference has occurred\nSyntaxErrorA syntax error has occurred\nTypeErrorA type error has occurred\nURIErrorAn encodeURI() error has occurred"
+     }
+  ]
+},
+{
+  "heading": "Useful Links↵",
+  "description": "A list of Useful resources",
+  "links": [
+     {
+        "name": "Js cleaner",
+        "link": ""
+     },
+     {
+        "name": "Obfuscator",
+        "link": ""
+     },
+     {
+        "name": "Can I use?",
+        "link": ""
+     },
+     {
+        "name": "Node.js",
+        "link": ""
+     },
+     {
+        "name": "jQuery",
+        "link": ""
+     },
+     {
+        "name": "Regex Tester",
+        "link": ""
+     }
+  ]
+}
+]
